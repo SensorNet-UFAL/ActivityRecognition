@@ -57,10 +57,10 @@ label = selected_columns[-1]
 #plt.show()
 
 #--SCORES PARA TODOS OS METODOS--##
-#verify_accuracy_cross_validation(con_dataset, SQLITE_DATASET_NAME, selected_columns, 1, features, label, 10)
+#verify_accuracy_cross_validation(con_dataset, SQLITE_DATASET_NAME, selected_columns, 18, features, label, 10)
 
 #--VERIFICANDO RESULTADO COM MATRIZ DE CONFUSÃO--#
-data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 2 order by TimeStamp", con_dataset)
+data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 2 order by TimeStamp", con_dataset)
 classifier = neighbors.KNeighborsClassifier(n_neighbors=5)
 verify_confusion_matrix(classifier, data, features, label)
 

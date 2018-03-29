@@ -18,6 +18,7 @@ from scipy.stats import kurtosis, skew
 from classes.commons.struct import Struct
 import plotly.plotly as py
 import plotly.graph_objs as go
+from classes.converters.umaAdl import UmaAdlConverter
 #--IMPORTAÇÃO DE BIBLIOTECAS DE MACHINE LEARNING--#
 from sklearn.model_selection import cross_val_score #Para realizar o Cross Validation
 from sklearn import neighbors # KNN
@@ -40,6 +41,8 @@ KURTOSIS = "Kurtosis"
 IQR = "IQR"
 ADM = "ADM"
 ADSD = "ADSD"
+
+LOG_FILE = "output.txt"
 
 
 # ------------------------
@@ -311,30 +314,37 @@ def split_dataframe_by_timestamp(data, timestamp_label, timestamp_interval):
     return ""
 
 #Test machineleargin algorithms with all dataset
-def verify_accuracy_cross_validation(con_sql, sqlite_dataset_name, selected_columns, person, features_keys, label_key,n_fold):
+def verify_accuracy_cross_validation(con_sql, sqlite_dataset_name, selected_columns, person_len, features_keys, label_key,n_fold):
+    best_result = {"Classifier":"", "Person":0, "Sensor":0, "Position":0, "Socore":0.0}
+    for person in range(1,person_len+1):
+        file_print("==========================================PERSON {}======================================".format(person), LOG_FILE, True)
+        for position, position_value in UmaAdlConverter.SENSOR.__dict__.items(): # Para cada dispositivo
+            for sensor, sensor_value in UmaAdlConverter.SENSORTYPE.__dict__.items(): # Para cada sensor (giroscópio, acelerômetro, magnetômetro)
+                consulta = "Select {} from {} where person = {} and SensorType = {} and SensorID = {} order by TimeStamp".format(
+                        ", ".join(selected_columns), sqlite_dataset_name, person, sensor_value, position_value)
+                file_print("+ "+consulta, LOG_FILE, True)
+                all_data = get_data_sql_query(consulta, con_sql)
+                if len(all_data) < 1:
+                    file_print("* ATENÇÃO NENHUMA LINHA PARA: "+consulta, LOG_FILE, True)
+                    continue
+                features, labels = split_features_labels(all_data, features_keys, label_key)
+                classifiers = []
+                classifiers.append(neighbors.KNeighborsClassifier(n_neighbors=5))
+                classifiers.append(GaussianNB())
+                classifiers.append(tree.DecisionTreeClassifier())
+                classifiers.append(RandomForestClassifier(max_depth=20, random_state=1))
+                classifiers.append(ExtraTreesClassifier(max_depth=100, random_state=0))
+                #classifiers.append(svm.SVC())
+                for clf in classifiers:
+                    t = time.time()
+                    scores = cross_val_score(clf, features, labels, cv=n_fold)
+                    score = np.mean(scores)
+                    file_print("Pessoa {} - Position: {} - Sensor: {} - Metodo: {} - Score: {} - Time: {}s".format(person, position, sensor, clf.__class__.__name__, score, round(float(time.time()-t), 3)), LOG_FILE, True)
+                    if score > best_result["Socore"]:
+                        best_result = {"Classifier": clf.__class__.__name__, "Person": person, "Sensor":sensor , "Position":position , "Socore":score}
 
-    for position, position_value in UmaAdlConverter.SENSOR.__dict__.items(): # Para cada dispositivo
-        for sensor, sensor_value in UmaAdlConverter.SENSORTYPE.__dict__.items(): # Para cada sensor (giroscópio, acelerômetro, magnetômetro)
-            consulta = "Select {} from {} where person = {} and SensorType = {} and SensorID = {} order by TimeStamp".format(
-                    ", ".join(selected_columns), sqlite_dataset_name, person, sensor_value, position_value)
-            file_print("+ "+consulta, LOG_FILE, True)
-            all_data = get_data_sql_query(consulta, con_sql)
-            if len(all_data) < 1:
-                file_print("* ATENÇÃO NENHUMA LINHA PARA: "+consulta, LOG_FILE, True)
-                continue
-            features, labels = utils.split_features_labels(all_data, features_keys, label_key)
-            classifiers = []
-            classifiers.append(neighbors.KNeighborsClassifier(n_neighbors=5))
-            classifiers.append(GaussianNB())
-            classifiers.append(tree.DecisionTreeClassifier())
-            classifiers.append(RandomForestClassifier(max_depth=20, random_state=1))
-            classifiers.append(ExtraTreesClassifier(max_depth=100, random_state=0))
-            #classifiers.append(svm.SVC())
-            for clf in classifiers:
-                t = time.time()
-                scores = cross_val_score(clf, features, labels, cv=n_fold)
-                file_print("Pessoa {} - Position: {} - Sensor: {} - Metodo: {} - Score: {} - Time: {}s".format(person, position, sensor, clf.__class__.__name__, np.mean(scores), round(float(time.time()-t), 3)), LOG_FILE, True)
-
+    file_print("================BEST RESULT=====================",LOG_FILE, True)
+    file_print(str(best_result), LOG_FILE, True)
 
 def verify_confusion_matrix(classifier, data, features_keys, label_key):
     features_train, features_test, labels_train, labels_test = preprocess(data, features_keys, label_key, 0.8, 50)
@@ -389,5 +399,5 @@ def knn_verify_accuracy_cross_validation(data, features_keys, label_key,n_fold, 
         np.set_printoptions(precision=2)
         class_names = np.unique(labels_test)
         plt.figure()
-        utils.plot_confusion_matrix(cnf_matrix, class_names, True, title='Confusion matrix, for Knn')
+        plot_confusion_matrix(cnf_matrix, class_names, True, title='Confusion matrix, for Knn')
         plt.show()

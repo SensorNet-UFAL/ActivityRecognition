@@ -1,82 +1,1396 @@
+==========================================PERSON 1======================================
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 0 and SensorID = 0 order by TimeStamp
-Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7288912345610109 - Time: 3.538s
-Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.512366981998104 - Time: 2.156s
-Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6972245868696845 - Time: 5.676s
-Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7187537948074485 - Time: 12.243s
-Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.720176664356609 - Time: 7.567s
+Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7288912345610109 - Time: 3.072s
+Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.512366981998104 - Time: 1.907s
+Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6968797483151752 - Time: 5.183s
+Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7187537948074485 - Time: 10.935s
+Pessoa 1 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.720176664356609 - Time: 6.678s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 1 and SensorID = 0 order by TimeStamp
 * ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 1 and SensorID = 0 order by TimeStamp
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 0 order by TimeStamp
 * ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 0 order by TimeStamp
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 0 and SensorID = 1 order by TimeStamp
-Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6906208724057981 - Time: 0.272s
-Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5897219995919702 - Time: 0.187s
-Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.650137363834383 - Time: 0.444s
-Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6893169127066244 - Time: 1.018s
-Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6935258050093862 - Time: 0.663s
+Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6906208724057981 - Time: 0.24s
+Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5897219995919702 - Time: 0.171s
+Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6540896750174027 - Time: 0.415s
+Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6893169127066244 - Time: 0.933s
+Pessoa 1 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6935258050093862 - Time: 0.622s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 1 and SensorID = 1 order by TimeStamp
-Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.33639279325311533 - Time: 0.263s
-Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.15374250303599707 - Time: 0.182s
-Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2894857057620914 - Time: 0.532s
-Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3499139186893271 - Time: 1.24s
-Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3360322603380766 - Time: 0.925s
+Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.33639279325311533 - Time: 0.246s
+Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.15374250303599707 - Time: 0.17s
+Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.28896164146651404 - Time: 0.492s
+Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3499139186893271 - Time: 1.154s
+Pessoa 1 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3360322603380766 - Time: 0.89s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 1 order by TimeStamp
-Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.804635502547565 - Time: 0.24s
-Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5862971849315773 - Time: 0.178s
-Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7752165811803899 - Time: 0.297s
-Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.790507311384461 - Time: 0.723s
-Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7909388842106343 - Time: 0.561s
+Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.804635502547565 - Time: 0.237s
+Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5862971849315773 - Time: 0.174s
+Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7752079343754321 - Time: 0.291s
+Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.790507311384461 - Time: 0.73s
+Pessoa 1 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7909388842106343 - Time: 0.554s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 0 and SensorID = 3 order by TimeStamp
-Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6558003605612763 - Time: 0.248s
-Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.44413565241854086 - Time: 0.176s
-Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6128333051073631 - Time: 0.417s
-Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6502725513642448 - Time: 0.973s
-Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.644042083269429 - Time: 0.706s
+Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6558003605612763 - Time: 0.257s
+Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.44413565241854086 - Time: 0.169s
+Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6166027712025275 - Time: 0.417s
+Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6502725513642448 - Time: 0.95s
+Pessoa 1 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.644042083269429 - Time: 0.685s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 1 and SensorID = 3 order by TimeStamp
-Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2916871618317173 - Time: 0.252s
-Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2218059992428842 - Time: 0.174s
-Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.26073422077217934 - Time: 0.483s
-Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.29450109718789175 - Time: 1.154s
-Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2881684564657082 - Time: 0.926s
+Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2916871618317173 - Time: 0.245s
+Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2218059992428842 - Time: 0.17s
+Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.25942029706142516 - Time: 0.48s
+Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.29450109718789175 - Time: 1.111s
+Pessoa 1 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2881684564657082 - Time: 0.887s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 3 order by TimeStamp
-Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7749277677740549 - Time: 0.24s
-Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.48061696242072716 - Time: 0.179s
-Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7414346032218916 - Time: 0.31s
-Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7623749320263065 - Time: 0.764s
-Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.760351259660163 - Time: 0.588s
+Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7749277677740549 - Time: 0.232s
+Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.48061696242072716 - Time: 0.173s
+Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7395938115381617 - Time: 0.302s
+Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7623749320263065 - Time: 0.733s
+Pessoa 1 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.760351259660163 - Time: 0.573s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 0 and SensorID = 4 order by TimeStamp
-Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6711963409844055 - Time: 0.246s
-Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5221233705796046 - Time: 0.176s
-Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6488998380331521 - Time: 0.427s
-Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6759512188438455 - Time: 0.939s
-Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6708573879632443 - Time: 0.665s
+Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6711963409844055 - Time: 0.244s
+Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5221233705796046 - Time: 0.172s
+Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6487270290699426 - Time: 0.427s
+Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6759512188438455 - Time: 0.916s
+Pessoa 1 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6708573879632443 - Time: 0.639s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 1 and SensorID = 4 order by TimeStamp
-Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.29450188994289084 - Time: 0.259s
-Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1262408383608642 - Time: 0.177s
-Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2538720325075381 - Time: 0.482s
-Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.30355135863474336 - Time: 1.132s
-Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.287109035985566 - Time: 0.922s
+Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.29450188994289084 - Time: 0.245s
+Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1262408383608642 - Time: 0.17s
+Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.25581230511749453 - Time: 0.475s
+Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.30355135863474336 - Time: 1.103s
+Pessoa 1 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.287109035985566 - Time: 0.9s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 4 order by TimeStamp
-Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8525680911808587 - Time: 0.239s
-Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.44813547921993024 - Time: 0.177s
-Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8131805384737498 - Time: 0.3s
-Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8222268281714837 - Time: 0.727s
-Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8311777604299782 - Time: 0.571s
+Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8525680911808587 - Time: 0.234s
+Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.44813547921993024 - Time: 0.171s
+Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8110706320402878 - Time: 0.296s
+Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8222268281714837 - Time: 0.706s
+Pessoa 1 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8311777604299782 - Time: 0.553s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 0 and SensorID = 2 order by TimeStamp
-Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6846984433602157 - Time: 0.247s
-Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.554871789733365 - Time: 0.177s
-Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6662388203603151 - Time: 0.414s
-Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6897052932340552 - Time: 0.92s
-Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6780295379773325 - Time: 0.667s
+Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6846984433602157 - Time: 0.241s
+Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.554871789733365 - Time: 0.172s
+Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6627303707826687 - Time: 0.415s
+Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6897052932340552 - Time: 0.914s
+Pessoa 1 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6780295379773325 - Time: 0.65s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 1 and SensorID = 2 order by TimeStamp
-Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3546376400195466 - Time: 0.256s
-Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.26739517406506785 - Time: 0.176s
-Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3122859792014824 - Time: 0.496s
-Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.37045454114240467 - Time: 1.179s
-Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3527139324920786 - Time: 0.965s
+Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3546376400195466 - Time: 0.247s
+Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.26739517406506785 - Time: 0.171s
+Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.31220158552090266 - Time: 0.481s
+Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.37045454114240467 - Time: 1.118s
+Pessoa 1 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3527139324920786 - Time: 0.881s
 + Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 1 and SensorType = 2 and SensorID = 2 order by TimeStamp
-Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8680254649674095 - Time: 0.244s
-Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6738507619963553 - Time: 0.177s
-Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8452883109227235 - Time: 0.289s
-Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8484578860698878 - Time: 0.726s
-Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8538913632968133 - Time: 0.534s
+Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8680254649674095 - Time: 0.233s
+Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6738507619963553 - Time: 0.176s
+Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8467815492511008 - Time: 0.281s
+Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8484578860698878 - Time: 0.654s
+Pessoa 1 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8538913632968133 - Time: 0.512s
+==========================================PERSON 2======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 2 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.704079275847642 - Time: 2.332s
+Pessoa 2 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.42970562285589037 - Time: 1.476s
+Pessoa 2 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6564060569870206 - Time: 4.096s
+Pessoa 2 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6949460615665638 - Time: 8.717s
+Pessoa 2 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6927279170589842 - Time: 5.528s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 2 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7013484768277409 - Time: 0.189s
+Pessoa 2 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5083456205857156 - Time: 0.136s
+Pessoa 2 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.657682673536693 - Time: 0.341s
+Pessoa 2 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.695012528884103 - Time: 0.76s
+Pessoa 2 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6898841760899874 - Time: 0.539s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 2 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3375244608406047 - Time: 0.195s
+Pessoa 2 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.20573952395825437 - Time: 0.136s
+Pessoa 2 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2833426398584852 - Time: 0.408s
+Pessoa 2 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3531104611196649 - Time: 0.916s
+Pessoa 2 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.32727753031753465 - Time: 0.677s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 2 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8170912896984273 - Time: 0.188s
+Pessoa 2 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5560415926243804 - Time: 0.135s
+Pessoa 2 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7826918723196784 - Time: 0.218s
+Pessoa 2 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7966051881331598 - Time: 0.544s
+Pessoa 2 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7990690555453333 - Time: 0.451s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 2 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6364386754716616 - Time: 0.184s
+Pessoa 2 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.44613665745362796 - Time: 0.132s
+Pessoa 2 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5906864046444065 - Time: 0.321s
+Pessoa 2 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6356543551671077 - Time: 0.742s
+Pessoa 2 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6284521727489996 - Time: 0.561s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 2 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.30726473047382663 - Time: 0.184s
+Pessoa 2 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.18445093039788465 - Time: 0.132s
+Pessoa 2 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.26738769795665523 - Time: 0.363s
+Pessoa 2 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3092268722099175 - Time: 0.865s
+Pessoa 2 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2990194373076798 - Time: 0.657s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 2 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7549900176110464 - Time: 0.175s
+Pessoa 2 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5817343172928953 - Time: 0.129s
+Pessoa 2 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.733819816604132 - Time: 0.226s
+Pessoa 2 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7540673802317415 - Time: 0.543s
+Pessoa 2 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7513082029904725 - Time: 0.447s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 2 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6653897901266708 - Time: 0.195s
+Pessoa 2 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.44036626458482137 - Time: 0.138s
+Pessoa 2 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6147261523048924 - Time: 0.323s
+Pessoa 2 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6511464544900509 - Time: 0.732s
+Pessoa 2 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.648139769136838 - Time: 0.572s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 2 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.34798518061784484 - Time: 0.202s
+Pessoa 2 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.21127514152202448 - Time: 0.146s
+Pessoa 2 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2950991019824077 - Time: 0.387s
+Pessoa 2 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3543383790340132 - Time: 0.887s
+Pessoa 2 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.32928893268264153 - Time: 0.686s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 2 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7995038411797942 - Time: 0.184s
+Pessoa 2 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5257887939948424 - Time: 0.137s
+Pessoa 2 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.777834024959498 - Time: 0.241s
+Pessoa 2 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7891827031790039 - Time: 0.567s
+Pessoa 2 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.791299396193706 - Time: 0.469s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 2 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7144447085797262 - Time: 0.188s
+Pessoa 2 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5370695909880427 - Time: 0.133s
+Pessoa 2 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6768083631017695 - Time: 0.341s
+Pessoa 2 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7144619605399793 - Time: 0.76s
+Pessoa 2 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7087713215700029 - Time: 0.525s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 2 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3783982285231745 - Time: 0.191s
+Pessoa 2 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2034584386247585 - Time: 0.133s
+Pessoa 2 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.32506523204840115 - Time: 0.368s
+Pessoa 2 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.37907642789424567 - Time: 0.883s
+Pessoa 2 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3664857601280185 - Time: 0.683s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 2 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 2 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.792503600344122 - Time: 0.181s
+Pessoa 2 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5468221571231611 - Time: 0.134s
+Pessoa 2 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7631183102806424 - Time: 0.228s
+Pessoa 2 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7850439885856763 - Time: 0.549s
+Pessoa 2 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7855924644731923 - Time: 0.455s
+==========================================PERSON 3======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 3 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6867034624157945 - Time: 2.936s
+Pessoa 3 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4417260354393252 - Time: 1.839s
+Pessoa 3 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6557828255903904 - Time: 4.799s
+Pessoa 3 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6866136350369365 - Time: 10.545s
+Pessoa 3 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6844122452051615 - Time: 6.781s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 3 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6321259544874251 - Time: 0.236s
+Pessoa 3 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5190323105170971 - Time: 0.174s
+Pessoa 3 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.601684795648999 - Time: 0.416s
+Pessoa 3 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6355663643578262 - Time: 0.913s
+Pessoa 3 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.625625536019305 - Time: 0.659s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 3 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.24646592227638803 - Time: 0.244s
+Pessoa 3 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.16336676563003769 - Time: 0.166s
+Pessoa 3 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.21698568996231304 - Time: 0.536s
+Pessoa 3 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2635582869688851 - Time: 1.162s
+Pessoa 3 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.24556357382293306 - Time: 0.894s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 3 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8013234268574039 - Time: 0.224s
+Pessoa 3 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6324495219179139 - Time: 0.167s
+Pessoa 3 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7897485608955264 - Time: 0.265s
+Pessoa 3 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7918386998227869 - Time: 0.646s
+Pessoa 3 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7973394438418848 - Time: 0.507s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 3 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6254028326176464 - Time: 0.235s
+Pessoa 3 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.47084382458760976 - Time: 0.164s
+Pessoa 3 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5931579002390233 - Time: 0.466s
+Pessoa 3 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.610874454014919 - Time: 1.002s
+Pessoa 3 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6108613995005439 - Time: 0.668s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 3 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.23281232935819385 - Time: 0.237s
+Pessoa 3 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1494120646730624 - Time: 0.165s
+Pessoa 3 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.20525438092942078 - Time: 0.497s
+Pessoa 3 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.23987360425113033 - Time: 1.137s
+Pessoa 3 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.22631175587632385 - Time: 0.885s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 3 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.787083635132267 - Time: 0.226s
+Pessoa 3 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5031913322977601 - Time: 0.167s
+Pessoa 3 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7512269045871494 - Time: 0.296s
+Pessoa 3 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7717233220055979 - Time: 0.72s
+Pessoa 3 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7723527004798469 - Time: 0.543s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 3 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6778373320539529 - Time: 0.231s
+Pessoa 3 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.45883852448544415 - Time: 0.162s
+Pessoa 3 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6329232450508901 - Time: 0.386s
+Pessoa 3 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6617329104868871 - Time: 0.908s
+Pessoa 3 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6625717005497165 - Time: 0.676s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 3 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.26103467405945974 - Time: 0.253s
+Pessoa 3 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1747833034863176 - Time: 0.167s
+Pessoa 3 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.23370641308356363 - Time: 0.479s
+Pessoa 3 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2717944047572139 - Time: 1.064s
+Pessoa 3 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.26577187139410763 - Time: 0.885s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 3 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8491422424161735 - Time: 0.226s
+Pessoa 3 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4329395039479705 - Time: 0.165s
+Pessoa 3 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.818912421018482 - Time: 0.285s
+Pessoa 3 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8424117238471632 - Time: 0.691s
+Pessoa 3 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8398065150443598 - Time: 0.508s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 3 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6402626736121608 - Time: 0.241s
+Pessoa 3 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.491078326635356 - Time: 0.167s
+Pessoa 3 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6088870196142364 - Time: 0.415s
+Pessoa 3 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6380304183589618 - Time: 0.908s
+Pessoa 3 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6333480965768683 - Time: 0.652s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 3 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.25521234995910613 - Time: 0.24s
+Pessoa 3 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2117970573514357 - Time: 0.176s
+Pessoa 3 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.22528434882074388 - Time: 0.483s
+Pessoa 3 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2738803022188986 - Time: 1.123s
+Pessoa 3 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.25585434478955754 - Time: 0.886s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 3 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 3 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8269907824859475 - Time: 0.228s
+Pessoa 3 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6220637746128138 - Time: 0.168s
+Pessoa 3 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8127361418065167 - Time: 0.267s
+Pessoa 3 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8266988861873774 - Time: 0.644s
+Pessoa 3 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8240850306923353 - Time: 0.513s
+==========================================PERSON 4======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 4 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7040622999660535 - Time: 3.036s
+Pessoa 4 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.32872860111555385 - Time: 1.908s
+Pessoa 4 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6726146114707177 - Time: 5.075s
+Pessoa 4 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7058870464269722 - Time: 11.304s
+Pessoa 4 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7026940264835725 - Time: 6.793s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 4 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.688192231645869 - Time: 0.242s
+Pessoa 4 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4893408112911091 - Time: 0.171s
+Pessoa 4 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6474981794867989 - Time: 0.419s
+Pessoa 4 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6946890933069467 - Time: 0.98s
+Pessoa 4 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6818684782882277 - Time: 0.675s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 4 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.308075482280698 - Time: 0.246s
+Pessoa 4 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.21270426660301722 - Time: 0.17s
+Pessoa 4 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2697404494343209 - Time: 0.53s
+Pessoa 4 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3296908842157614 - Time: 1.175s
+Pessoa 4 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3039440531839288 - Time: 0.893s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 4 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7816948490988412 - Time: 0.234s
+Pessoa 4 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.42213990529253753 - Time: 0.171s
+Pessoa 4 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7498017237158331 - Time: 0.307s
+Pessoa 4 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7734310820024588 - Time: 0.733s
+Pessoa 4 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7686059554501423 - Time: 0.575s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 4 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6488337671194535 - Time: 0.24s
+Pessoa 4 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.411384086074751 - Time: 0.17s
+Pessoa 4 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6100028992093284 - Time: 0.445s
+Pessoa 4 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6486521367150372 - Time: 1.002s
+Pessoa 4 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6407838068204365 - Time: 0.689s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 4 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2537314302827083 - Time: 0.244s
+Pessoa 4 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.15812738271527224 - Time: 0.173s
+Pessoa 4 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.22170022736770095 - Time: 0.498s
+Pessoa 4 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.256111790856627 - Time: 1.156s
+Pessoa 4 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.24921100029206483 - Time: 0.894s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 4 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7296778928116578 - Time: 0.232s
+Pessoa 4 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.40044483212300347 - Time: 0.171s
+Pessoa 4 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7029856798858692 - Time: 0.317s
+Pessoa 4 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7252542434591694 - Time: 0.757s
+Pessoa 4 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7273716011303551 - Time: 0.588s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 4 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6567125554987854 - Time: 0.241s
+Pessoa 4 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.49002282940700825 - Time: 0.169s
+Pessoa 4 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6232269455709981 - Time: 0.451s
+Pessoa 4 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.660926055589133 - Time: 0.972s
+Pessoa 4 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6488900574133899 - Time: 0.676s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 4 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2921355057935563 - Time: 0.245s
+Pessoa 4 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.16448867820293472 - Time: 0.169s
+Pessoa 4 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.26496020453158087 - Time: 0.484s
+Pessoa 4 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2972247573738605 - Time: 1.136s
+Pessoa 4 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.27850644687156983 - Time: 0.907s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 4 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7710654011709025 - Time: 0.232s
+Pessoa 4 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.32731754617268205 - Time: 0.169s
+Pessoa 4 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7473317585358323 - Time: 0.305s
+Pessoa 4 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7649161406968218 - Time: 0.737s
+Pessoa 4 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.766320112391217 - Time: 0.579s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 4 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7467002613919048 - Time: 0.241s
+Pessoa 4 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5157200435130987 - Time: 0.171s
+Pessoa 4 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7171229505829851 - Time: 0.435s
+Pessoa 4 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7528498857505393 - Time: 0.926s
+Pessoa 4 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7460926417108656 - Time: 0.65s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 4 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.317765549584642 - Time: 0.247s
+Pessoa 4 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.16250810892963335 - Time: 0.169s
+Pessoa 4 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2762359207516365 - Time: 0.503s
+Pessoa 4 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3328885784529826 - Time: 1.158s
+Pessoa 4 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.31241459005641636 - Time: 0.899s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 4 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 4 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8641183793801718 - Time: 0.23s
+Pessoa 4 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4949650486817512 - Time: 0.173s
+Pessoa 4 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.84033145010097 - Time: 0.292s
+Pessoa 4 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8588599340158651 - Time: 0.667s
+Pessoa 4 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8578023560025766 - Time: 0.515s
+==========================================PERSON 5======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 5 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7534050484375274 - Time: 1.464s
+Pessoa 5 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.42756872314307126 - Time: 0.905s
+Pessoa 5 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7164926918891769 - Time: 2.618s
+Pessoa 5 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7565265234712691 - Time: 5.62s
+Pessoa 5 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7557096067289915 - Time: 3.269s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 5 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5734853739528749 - Time: 0.124s
+Pessoa 5 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4477622865449617 - Time: 0.088s
+Pessoa 5 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.532301750781451 - Time: 0.236s
+Pessoa 5 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.579207490652886 - Time: 0.548s
+Pessoa 5 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5748911068002113 - Time: 0.399s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 5 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3561892199666348 - Time: 0.125s
+Pessoa 5 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.31366809799469225 - Time: 0.087s
+Pessoa 5 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3221811811383186 - Time: 0.275s
+Pessoa 5 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3698798106483082 - Time: 0.627s
+Pessoa 5 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.35364823608814616 - Time: 0.461s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 5 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8819020045169615 - Time: 0.118s
+Pessoa 5 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4152571371092765 - Time: 0.087s
+Pessoa 5 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8607670227932797 - Time: 0.138s
+Pessoa 5 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8658372587628038 - Time: 0.373s
+Pessoa 5 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.877750387092118 - Time: 0.294s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 5 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6021092582904272 - Time: 0.125s
+Pessoa 5 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4313522495029731 - Time: 0.087s
+Pessoa 5 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5644161163875503 - Time: 0.226s
+Pessoa 5 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6047993626832191 - Time: 0.53s
+Pessoa 5 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5951082188048924 - Time: 0.403s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 5 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.29348448483385525 - Time: 0.124s
+Pessoa 5 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.24617946294886717 - Time: 0.086s
+Pessoa 5 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2693157753559933 - Time: 0.266s
+Pessoa 5 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3095516425491994 - Time: 0.618s
+Pessoa 5 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.29491127044030635 - Time: 0.456s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 5 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7709440605531566 - Time: 0.118s
+Pessoa 5 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5586056510506802 - Time: 0.089s
+Pessoa 5 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7415597733207204 - Time: 0.158s
+Pessoa 5 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7612521305906008 - Time: 0.414s
+Pessoa 5 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7579096980299762 - Time: 0.323s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 5 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.731064095570102 - Time: 0.122s
+Pessoa 5 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5097665269756171 - Time: 0.086s
+Pessoa 5 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.685966446741985 - Time: 0.204s
+Pessoa 5 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7260001692066067 - Time: 0.483s
+Pessoa 5 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7188456410414046 - Time: 0.356s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 5 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.42494107475528214 - Time: 0.122s
+Pessoa 5 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.30423570378070997 - Time: 0.086s
+Pessoa 5 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.37136975306341286 - Time: 0.243s
+Pessoa 5 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.4306806311505148 - Time: 0.623s
+Pessoa 5 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.41048221218249525 - Time: 0.452s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 5 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8908929962664359 - Time: 0.118s
+Pessoa 5 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6687368902239916 - Time: 0.086s
+Pessoa 5 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8597203063715853 - Time: 0.144s
+Pessoa 5 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8781720379210848 - Time: 0.371s
+Pessoa 5 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8878766547598472 - Time: 0.293s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 5 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6450576274337089 - Time: 0.119s
+Pessoa 5 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.37481163627205066 - Time: 0.087s
+Pessoa 5 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6066871898277512 - Time: 0.216s
+Pessoa 5 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6479066457876712 - Time: 0.52s
+Pessoa 5 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6328102748069818 - Time: 0.394s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 5 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3700319551395635 - Time: 0.122s
+Pessoa 5 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.3317374423166739 - Time: 0.086s
+Pessoa 5 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.32057217843195857 - Time: 0.252s
+Pessoa 5 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.38359183222530285 - Time: 0.612s
+Pessoa 5 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.35556367590348525 - Time: 0.458s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 5 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 5 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.9112911055603332 - Time: 0.12s
+Pessoa 5 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6437334826679053 - Time: 0.086s
+Pessoa 5 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8874630610342488 - Time: 0.137s
+Pessoa 5 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8925475198909625 - Time: 0.372s
+Pessoa 5 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.9004741440619647 - Time: 0.286s
+==========================================PERSON 6======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 6 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.733409498865153 - Time: 0.645s
+Pessoa 6 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6518170637075059 - Time: 0.402s
+Pessoa 6 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7196959110232876 - Time: 1.027s
+Pessoa 6 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.738216607271788 - Time: 2.262s
+Pessoa 6 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7359653078791706 - Time: 1.321s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 6 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7176960288047245 - Time: 0.06s
+Pessoa 6 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6882209617644401 - Time: 0.046s
+Pessoa 6 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.679260523064871 - Time: 0.093s
+Pessoa 6 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7229921660791226 - Time: 0.255s
+Pessoa 6 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7143402181445659 - Time: 0.191s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 6 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.27627381059989753 - Time: 0.061s
+Pessoa 6 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.19074202295941428 - Time: 0.048s
+Pessoa 6 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.26490007231311574 - Time: 0.115s
+Pessoa 6 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.29159256078821294 - Time: 0.317s
+Pessoa 6 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.28456200849679114 - Time: 0.254s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 6 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8354769049986441 - Time: 0.058s
+Pessoa 6 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6138419205158335 - Time: 0.047s
+Pessoa 6 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.821126849257284 - Time: 0.069s
+Pessoa 6 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.834150576998403 - Time: 0.217s
+Pessoa 6 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8368069842417668 - Time: 0.169s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 6 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6400267881239576 - Time: 0.062s
+Pessoa 6 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5030424714323168 - Time: 0.048s
+Pessoa 6 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5914910861059095 - Time: 0.101s
+Pessoa 6 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6423622159055483 - Time: 0.27s
+Pessoa 6 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6453757591930922 - Time: 0.208s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 6 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.28145539508422496 - Time: 0.063s
+Pessoa 6 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.18530120082556617 - Time: 0.047s
+Pessoa 6 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.24958614947935046 - Time: 0.111s
+Pessoa 6 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.28175622611455703 - Time: 0.309s
+Pessoa 6 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.27203363806486064 - Time: 0.246s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 6 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.76338946655696 - Time: 0.06s
+Pessoa 6 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6305643941377819 - Time: 0.047s
+Pessoa 6 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.753995774751246 - Time: 0.079s
+Pessoa 6 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.782464294429862 - Time: 0.226s
+Pessoa 6 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.788836789630195 - Time: 0.18s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 6 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7338824251432948 - Time: 0.06s
+Pessoa 6 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6908163350337264 - Time: 0.046s
+Pessoa 6 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7141619089445176 - Time: 0.09s
+Pessoa 6 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7202089569046091 - Time: 0.25s
+Pessoa 6 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7311966487618662 - Time: 0.185s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 6 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.27339883787709873 - Time: 0.062s
+Pessoa 6 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.16953164870556175 - Time: 0.046s
+Pessoa 6 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2543293131988784 - Time: 0.117s
+Pessoa 6 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.26405656340438954 - Time: 0.319s
+Pessoa 6 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.27070973953582655 - Time: 0.246s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 6 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8952537526885352 - Time: 0.059s
+Pessoa 6 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.7904301769084378 - Time: 0.047s
+Pessoa 6 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8882156233460583 - Time: 0.07s
+Pessoa 6 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8885702510050336 - Time: 0.204s
+Pessoa 6 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8882515680776549 - Time: 0.163s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 6 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7291166593957292 - Time: 0.06s
+Pessoa 6 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.7087730460753716 - Time: 0.047s
+Pessoa 6 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6980863116211953 - Time: 0.086s
+Pessoa 6 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7357655626027719 - Time: 0.245s
+Pessoa 6 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7294579236439701 - Time: 0.186s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 6 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3019717440182556 - Time: 0.063s
+Pessoa 6 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.14544626777184916 - Time: 0.047s
+Pessoa 6 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2885969887132677 - Time: 0.115s
+Pessoa 6 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.29660363323154015 - Time: 0.32s
+Pessoa 6 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2865867534704744 - Time: 0.245s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 6 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 6 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8457174625546717 - Time: 0.059s
+Pessoa 6 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.7350658075774354 - Time: 0.046s
+Pessoa 6 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8640212087653948 - Time: 0.064s
+Pessoa 6 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8487374855979507 - Time: 0.2s
+Pessoa 6 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8370718816067653 - Time: 0.163s
+==========================================PERSON 7======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 7 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5351977400393342 - Time: 1.547s
+Pessoa 7 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.2495167251926838 - Time: 0.97s
+Pessoa 7 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.4872810729367285 - Time: 2.49s
+Pessoa 7 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5442481565174302 - Time: 5.45s
+Pessoa 7 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5290244558655773 - Time: 4.405s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 7 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5751252007544987 - Time: 0.13s
+Pessoa 7 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.39518004444180815 - Time: 0.094s
+Pessoa 7 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5492862813761256 - Time: 0.211s
+Pessoa 7 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.577970083713207 - Time: 0.519s
+Pessoa 7 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5921572934807469 - Time: 0.38s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 7 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2585667653933572 - Time: 0.133s
+Pessoa 7 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.22003629335154723 - Time: 0.096s
+Pessoa 7 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2377206623874836 - Time: 0.253s
+Pessoa 7 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.25952883814592476 - Time: 0.617s
+Pessoa 7 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.260629426158674 - Time: 0.43s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 7 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7292445583336794 - Time: 0.123s
+Pessoa 7 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.41809303657639524 - Time: 0.094s
+Pessoa 7 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7065560012652266 - Time: 0.154s
+Pessoa 7 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7311594972755378 - Time: 0.41s
+Pessoa 7 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7294070561263778 - Time: 0.331s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 7 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.49968639967138484 - Time: 0.131s
+Pessoa 7 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.2901858881825398 - Time: 0.093s
+Pessoa 7 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.46617826906791615 - Time: 0.227s
+Pessoa 7 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5031377798336694 - Time: 0.555s
+Pessoa 7 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.4958586622883658 - Time: 0.391s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 7 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.21272619586972263 - Time: 0.129s
+Pessoa 7 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1796430284514642 - Time: 0.093s
+Pessoa 7 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.18991536330679396 - Time: 0.253s
+Pessoa 7 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2110128638018566 - Time: 0.614s
+Pessoa 7 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2069157848079067 - Time: 0.426s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 7 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.6811336858081026 - Time: 0.122s
+Pessoa 7 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4777445511532276 - Time: 0.093s
+Pessoa 7 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.6761551700928278 - Time: 0.155s
+Pessoa 7 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.6943756002877898 - Time: 0.415s
+Pessoa 7 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.6885489183428173 - Time: 0.345s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 7 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5826936568255424 - Time: 0.13s
+Pessoa 7 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.25846830610741733 - Time: 0.092s
+Pessoa 7 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5303721125740528 - Time: 0.205s
+Pessoa 7 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5703012164600777 - Time: 0.515s
+Pessoa 7 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5726478476863501 - Time: 0.389s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 7 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.28750688283358794 - Time: 0.128s
+Pessoa 7 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2313059396937976 - Time: 0.092s
+Pessoa 7 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2599220802352238 - Time: 0.237s
+Pessoa 7 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2842046959657476 - Time: 0.582s
+Pessoa 7 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.28468442296887664 - Time: 0.43s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 7 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7967780330611384 - Time: 0.122s
+Pessoa 7 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5352168417699646 - Time: 0.096s
+Pessoa 7 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7802006625860992 - Time: 0.149s
+Pessoa 7 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.804848162018647 - Time: 0.389s
+Pessoa 7 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8010747762201262 - Time: 0.316s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 0 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 0 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 1 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 7 and SensorType = 2 and SensorID = 2 order by TimeStamp
+==========================================PERSON 8======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 8 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6835887047067548 - Time: 1.325s
+Pessoa 8 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.2754721145773586 - Time: 0.834s
+Pessoa 8 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6291549217367001 - Time: 2.228s
+Pessoa 8 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6883078795810783 - Time: 4.857s
+Pessoa 8 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6763034270421558 - Time: 3.334s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 8 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5950125247471276 - Time: 0.114s
+Pessoa 8 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.44041177820538346 - Time: 0.083s
+Pessoa 8 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5723359125773425 - Time: 0.193s
+Pessoa 8 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.613567972378486 - Time: 0.479s
+Pessoa 8 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.603146519714845 - Time: 0.34s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 8 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.32980828763137127 - Time: 0.114s
+Pessoa 8 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.321612128696948 - Time: 0.083s
+Pessoa 8 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3068991907568908 - Time: 0.228s
+Pessoa 8 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3394116144382847 - Time: 0.55s
+Pessoa 8 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3237915609243836 - Time: 0.375s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 8 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8621807422039887 - Time: 0.109s
+Pessoa 8 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6800981329140443 - Time: 0.083s
+Pessoa 8 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8356190881488086 - Time: 0.129s
+Pessoa 8 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.845652733021609 - Time: 0.345s
+Pessoa 8 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8516742867369247 - Time: 0.281s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 8 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6302214604205484 - Time: 0.115s
+Pessoa 8 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3742323703698973 - Time: 0.082s
+Pessoa 8 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.596182597785863 - Time: 0.183s
+Pessoa 8 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6495992422712809 - Time: 0.466s
+Pessoa 8 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6476675648062279 - Time: 0.344s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 8 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2639774648545008 - Time: 0.114s
+Pessoa 8 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.24058129381869894 - Time: 0.083s
+Pessoa 8 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.23521066035679966 - Time: 0.225s
+Pessoa 8 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2726010464264715 - Time: 0.546s
+Pessoa 8 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.27529100295606723 - Time: 0.383s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 8 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8246694517491017 - Time: 0.108s
+Pessoa 8 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6265783028462193 - Time: 0.083s
+Pessoa 8 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8001329469475639 - Time: 0.126s
+Pessoa 8 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8165139703021478 - Time: 0.342s
+Pessoa 8 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8115399699015484 - Time: 0.282s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 8 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6031813453433148 - Time: 0.117s
+Pessoa 8 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3360212936465307 - Time: 0.084s
+Pessoa 8 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5657492337753806 - Time: 0.184s
+Pessoa 8 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6168882157322126 - Time: 0.465s
+Pessoa 8 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6060094782425557 - Time: 0.354s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 8 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3372839644622997 - Time: 0.114s
+Pessoa 8 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.31962577367078465 - Time: 0.082s
+Pessoa 8 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3059417786531732 - Time: 0.213s
+Pessoa 8 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3486865253185941 - Time: 0.527s
+Pessoa 8 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.35365066455300365 - Time: 0.383s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 8 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8239096931080547 - Time: 0.109s
+Pessoa 8 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6394249713188059 - Time: 0.083s
+Pessoa 8 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8171230192189958 - Time: 0.131s
+Pessoa 8 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8327865148185911 - Time: 0.343s
+Pessoa 8 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8324376268189349 - Time: 0.283s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 8 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 1.0 - Time: 0.023s
+Pessoa 8 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 1.0 - Time: 0.017s
+Pessoa 8 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 1.0 - Time: 0.017s
+Pessoa 8 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 1.0 - Time: 0.089s
+Pessoa 8 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 1.0 - Time: 0.083s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 8 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 1.0 - Time: 0.023s
+Pessoa 8 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 1.0 - Time: 0.017s
+Pessoa 8 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 1.0 - Time: 0.016s
+Pessoa 8 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 1.0 - Time: 0.089s
+Pessoa 8 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 1.0 - Time: 0.082s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 8 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 1.0 - Time: 0.023s
+Pessoa 8 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 1.0 - Time: 0.018s
+Pessoa 8 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 1.0 - Time: 0.016s
+Pessoa 8 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 1.0 - Time: 0.089s
+Pessoa 8 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 1.0 - Time: 0.082s
+==========================================PERSON 9======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 9 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6648060136235128 - Time: 2.816s
+Pessoa 9 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5087207599408148 - Time: 1.782s
+Pessoa 9 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6308845465605446 - Time: 5.031s
+Pessoa 9 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6701302555360297 - Time: 10.494s
+Pessoa 9 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6674540382750186 - Time: 6.566s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 9 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6572773277493654 - Time: 0.228s
+Pessoa 9 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5349697898565282 - Time: 0.161s
+Pessoa 9 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6188397988843769 - Time: 0.421s
+Pessoa 9 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6479067451682562 - Time: 0.927s
+Pessoa 9 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.641130104101187 - Time: 0.645s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 9 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2964970123968135 - Time: 0.232s
+Pessoa 9 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.15819844116782877 - Time: 0.159s
+Pessoa 9 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2588985050257446 - Time: 0.485s
+Pessoa 9 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.30069071963637617 - Time: 1.1s
+Pessoa 9 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.28741770413879497 - Time: 0.862s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 9 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8486545725905078 - Time: 0.233s
+Pessoa 9 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5613311453358988 - Time: 0.164s
+Pessoa 9 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8184820000439744 - Time: 0.274s
+Pessoa 9 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8149802113514513 - Time: 0.655s
+Pessoa 9 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8234211167553023 - Time: 0.49s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 9 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5912882362905925 - Time: 0.226s
+Pessoa 9 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3709538002929274 - Time: 0.158s
+Pessoa 9 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.543084889185989 - Time: 0.445s
+Pessoa 9 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.58452335707096 - Time: 0.95s
+Pessoa 9 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5835648597834193 - Time: 0.662s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 9 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2426197559511102 - Time: 0.229s
+Pessoa 9 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.18697572819067132 - Time: 0.161s
+Pessoa 9 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.21031711460911046 - Time: 0.482s
+Pessoa 9 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2471452967897513 - Time: 1.085s
+Pessoa 9 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2331044332498177 - Time: 0.823s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 9 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7256145292220303 - Time: 0.218s
+Pessoa 9 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.42073495769941144 - Time: 0.16s
+Pessoa 9 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7194561851563097 - Time: 0.287s
+Pessoa 9 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7357496582366504 - Time: 0.707s
+Pessoa 9 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7302870552267559 - Time: 0.548s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 9 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6610486547709492 - Time: 0.226s
+Pessoa 9 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5064086106213032 - Time: 0.157s
+Pessoa 9 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6268036529408808 - Time: 0.392s
+Pessoa 9 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6495972110693358 - Time: 0.885s
+Pessoa 9 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6531306790019533 - Time: 0.638s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 9 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.33045940676080854 - Time: 0.226s
+Pessoa 9 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1666436030048893 - Time: 0.156s
+Pessoa 9 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.28327251583493424 - Time: 0.455s
+Pessoa 9 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3301831105111499 - Time: 1.049s
+Pessoa 9 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3172721984563062 - Time: 0.77s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 9 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7892228376248165 - Time: 0.222s
+Pessoa 9 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.45916902437727175 - Time: 0.158s
+Pessoa 9 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7686471390165335 - Time: 0.285s
+Pessoa 9 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7815294441948348 - Time: 0.676s
+Pessoa 9 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7822859706323484 - Time: 0.526s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 9 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6779124142987099 - Time: 0.224s
+Pessoa 9 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5254491834682884 - Time: 0.159s
+Pessoa 9 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6311087566125981 - Time: 0.414s
+Pessoa 9 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6718979620030481 - Time: 0.93s
+Pessoa 9 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6692951747623163 - Time: 0.647s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 9 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3105826232241028 - Time: 0.235s
+Pessoa 9 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.13740532486889237 - Time: 0.16s
+Pessoa 9 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.27154554968368133 - Time: 0.466s
+Pessoa 9 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.32405675524594657 - Time: 1.084s
+Pessoa 9 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3107688511754709 - Time: 0.869s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 9 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 9 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8301553597679374 - Time: 0.223s
+Pessoa 9 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5519339497424687 - Time: 0.165s
+Pessoa 9 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7892065256676191 - Time: 0.275s
+Pessoa 9 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8114957477711796 - Time: 0.655s
+Pessoa 9 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8169731789722665 - Time: 0.504s
+==========================================PERSON 10======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 10 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6010069150113883 - Time: 1.476s
+Pessoa 10 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3765804926269615 - Time: 0.929s
+Pessoa 10 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5530171182692738 - Time: 2.582s
+Pessoa 10 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6041146886355746 - Time: 5.333s
+Pessoa 10 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5942903113126962 - Time: 3.774s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 10 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5298085523115008 - Time: 0.123s
+Pessoa 10 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.42489480567806936 - Time: 0.092s
+Pessoa 10 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5175360359457255 - Time: 0.21s
+Pessoa 10 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5526050513873331 - Time: 0.533s
+Pessoa 10 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5413679625351319 - Time: 0.367s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 10 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.29934617360946547 - Time: 0.128s
+Pessoa 10 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.27188083313654615 - Time: 0.092s
+Pessoa 10 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2907382677764155 - Time: 0.257s
+Pessoa 10 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3059050072670341 - Time: 0.621s
+Pessoa 10 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3007128566415268 - Time: 0.405s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 10 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7884587980278724 - Time: 0.121s
+Pessoa 10 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5561251814712496 - Time: 0.09s
+Pessoa 10 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7636991290943447 - Time: 0.143s
+Pessoa 10 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7946398542343609 - Time: 0.386s
+Pessoa 10 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7915767318348977 - Time: 0.314s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 10 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5148722661861412 - Time: 0.131s
+Pessoa 10 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3273602473549568 - Time: 0.091s
+Pessoa 10 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.4965870079105804 - Time: 0.21s
+Pessoa 10 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5244738357919789 - Time: 0.53s
+Pessoa 10 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5258210699326998 - Time: 0.389s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 10 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.23905259883727123 - Time: 0.129s
+Pessoa 10 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.24755005731500299 - Time: 0.096s
+Pessoa 10 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.23465817144951923 - Time: 0.257s
+Pessoa 10 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2521047271753526 - Time: 0.625s
+Pessoa 10 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2548864004860141 - Time: 0.418s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 10 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.6208524034778897 - Time: 0.121s
+Pessoa 10 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.3653009124477905 - Time: 0.093s
+Pessoa 10 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.5763148839840311 - Time: 0.17s
+Pessoa 10 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.611347762013968 - Time: 0.457s
+Pessoa 10 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.6147597982267617 - Time: 0.359s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 10 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5964973690591625 - Time: 0.129s
+Pessoa 10 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.27555667464893374 - Time: 0.099s
+Pessoa 10 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5492583189627642 - Time: 0.226s
+Pessoa 10 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6071109087204125 - Time: 0.527s
+Pessoa 10 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5815363209739527 - Time: 0.39s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 10 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.32489298107951103 - Time: 0.126s
+Pessoa 10 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2708107371860007 - Time: 0.089s
+Pessoa 10 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3082995739012217 - Time: 0.234s
+Pessoa 10 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3226027416197947 - Time: 0.574s
+Pessoa 10 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.32115286594353465 - Time: 0.408s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 10 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7448764877582658 - Time: 0.123s
+Pessoa 10 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4347345294844816 - Time: 0.093s
+Pessoa 10 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.712934697618066 - Time: 0.17s
+Pessoa 10 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.746822904959042 - Time: 0.401s
+Pessoa 10 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7443681954076665 - Time: 0.319s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 0 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 0 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 1 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 10 and SensorType = 2 and SensorID = 2 order by TimeStamp
+==========================================PERSON 11======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 11 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6050992507372358 - Time: 1.439s
+Pessoa 11 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4414814818658809 - Time: 0.901s
+Pessoa 11 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.561484585691082 - Time: 2.384s
+Pessoa 11 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6085427644957855 - Time: 5.21s
+Pessoa 11 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6013239071913585 - Time: 3.756s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 11 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.47219882925243795 - Time: 0.125s
+Pessoa 11 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.33611492606155274 - Time: 0.089s
+Pessoa 11 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.4350383269649597 - Time: 0.221s
+Pessoa 11 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.4880003559089772 - Time: 0.561s
+Pessoa 11 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.48206769496013796 - Time: 0.396s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 11 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3014995438450811 - Time: 0.145s
+Pessoa 11 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2686232870898446 - Time: 0.107s
+Pessoa 11 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.28215469785568276 - Time: 0.267s
+Pessoa 11 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3184934771807616 - Time: 0.615s
+Pessoa 11 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3088382299410723 - Time: 0.464s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 11 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7587420001057994 - Time: 0.131s
+Pessoa 11 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4719290650961816 - Time: 0.094s
+Pessoa 11 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.6975671479277463 - Time: 0.15s
+Pessoa 11 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7538483598455132 - Time: 0.401s
+Pessoa 11 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7406046048057529 - Time: 0.33s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 11 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.4755327613198005 - Time: 0.124s
+Pessoa 11 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3550727679824618 - Time: 0.093s
+Pessoa 11 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.4451583425193273 - Time: 0.22s
+Pessoa 11 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.48282168566591466 - Time: 0.542s
+Pessoa 11 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.47618612467195803 - Time: 0.401s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 11 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.26966579640068383 - Time: 0.131s
+Pessoa 11 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2955018067832575 - Time: 0.1s
+Pessoa 11 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2548726273366751 - Time: 0.259s
+Pessoa 11 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2981631975961538 - Time: 0.591s
+Pessoa 11 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.28983966659140115 - Time: 0.415s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 11 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.6690541126960123 - Time: 0.119s
+Pessoa 11 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4085196736637946 - Time: 0.089s
+Pessoa 11 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.6339192800735594 - Time: 0.159s
+Pessoa 11 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.6649603553357246 - Time: 0.424s
+Pessoa 11 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.6656386800170643 - Time: 0.349s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 11 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5067921150420276 - Time: 0.13s
+Pessoa 11 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.35140799144304646 - Time: 0.091s
+Pessoa 11 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.4709474561910844 - Time: 0.218s
+Pessoa 11 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5201552803229014 - Time: 0.525s
+Pessoa 11 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5204676176023095 - Time: 0.407s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 11 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3488314818845949 - Time: 0.128s
+Pessoa 11 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.31257425061239696 - Time: 0.09s
+Pessoa 11 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3313877801361772 - Time: 0.237s
+Pessoa 11 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.37243325486228934 - Time: 0.574s
+Pessoa 11 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.35512684928497257 - Time: 0.41s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 11 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7542767221638939 - Time: 0.121s
+Pessoa 11 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5949449457011736 - Time: 0.089s
+Pessoa 11 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7198508040992057 - Time: 0.152s
+Pessoa 11 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.758317256439845 - Time: 0.394s
+Pessoa 11 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.758850145780901 - Time: 0.326s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 0 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 0 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 1 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 11 and SensorType = 2 and SensorID = 2 order by TimeStamp
+==========================================PERSON 12======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 12 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5591450047247909 - Time: 2.618s
+Pessoa 12 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.43694429854869743 - Time: 1.731s
+Pessoa 12 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5143175648925425 - Time: 4.316s
+Pessoa 12 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5674967718401996 - Time: 8.946s
+Pessoa 12 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.553060893689816 - Time: 6.767s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 12 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5830197369689704 - Time: 0.202s
+Pessoa 12 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5082795310695359 - Time: 0.148s
+Pessoa 12 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.549568705458452 - Time: 0.364s
+Pessoa 12 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5939957499146605 - Time: 0.85s
+Pessoa 12 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5855697619813554 - Time: 0.571s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 12 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.27958496401354804 - Time: 0.202s
+Pessoa 12 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.26963478210066866 - Time: 0.148s
+Pessoa 12 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.24928267443310484 - Time: 0.413s
+Pessoa 12 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.28735585498992966 - Time: 1.012s
+Pessoa 12 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2923329130390756 - Time: 0.668s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 12 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7566288152848815 - Time: 0.196s
+Pessoa 12 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5972845817766081 - Time: 0.145s
+Pessoa 12 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7307144536253238 - Time: 0.25s
+Pessoa 12 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7533480536773978 - Time: 0.678s
+Pessoa 12 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7518998252660263 - Time: 0.491s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 12 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5664406984674656 - Time: 0.201s
+Pessoa 12 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.3644683636044709 - Time: 0.146s
+Pessoa 12 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.541447548807026 - Time: 0.365s
+Pessoa 12 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5765476816437987 - Time: 0.835s
+Pessoa 12 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5687523419006404 - Time: 0.555s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 12 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2614074506937436 - Time: 0.2s
+Pessoa 12 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.20109180417238837 - Time: 0.145s
+Pessoa 12 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.22728208196516336 - Time: 0.385s
+Pessoa 12 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2616234160332283 - Time: 0.919s
+Pessoa 12 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2583267150036109 - Time: 0.67s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 12 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.6415193356726204 - Time: 0.19s
+Pessoa 12 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4636946187073301 - Time: 0.156s
+Pessoa 12 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.6160773132245121 - Time: 0.266s
+Pessoa 12 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.6444881543751503 - Time: 0.644s
+Pessoa 12 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.6445909702012099 - Time: 0.531s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 12 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5757589309965445 - Time: 0.2s
+Pessoa 12 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.43246502138972254 - Time: 0.144s
+Pessoa 12 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5517216854799185 - Time: 0.333s
+Pessoa 12 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5892377617539127 - Time: 0.769s
+Pessoa 12 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5759651723342365 - Time: 0.576s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 12 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.27345038274667294 - Time: 0.205s
+Pessoa 12 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.18136273036899428 - Time: 0.15s
+Pessoa 12 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.24284475692864818 - Time: 0.373s
+Pessoa 12 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2855093837778785 - Time: 0.947s
+Pessoa 12 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2690569332211571 - Time: 0.681s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 12 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7808220120695294 - Time: 0.212s
+Pessoa 12 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5765086657929341 - Time: 0.211s
+Pessoa 12 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7512378632586886 - Time: 0.29s
+Pessoa 12 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7677279104514929 - Time: 0.692s
+Pessoa 12 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7717716382835513 - Time: 0.521s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 12 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6144269127463925 - Time: 0.213s
+Pessoa 12 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4885278343126253 - Time: 0.155s
+Pessoa 12 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5747608413721443 - Time: 0.439s
+Pessoa 12 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6253139213351033 - Time: 0.947s
+Pessoa 12 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6209298333652128 - Time: 0.629s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 12 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.29212184227748195 - Time: 0.256s
+Pessoa 12 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2303195472612834 - Time: 0.162s
+Pessoa 12 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2725769446590297 - Time: 0.457s
+Pessoa 12 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3191997488462991 - Time: 1.078s
+Pessoa 12 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3044031490345181 - Time: 0.797s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 12 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 12 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.782601418277798 - Time: 0.222s
+Pessoa 12 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5477843243946353 - Time: 0.153s
+Pessoa 12 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7510030119522189 - Time: 0.256s
+Pessoa 12 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7776590476057027 - Time: 0.626s
+Pessoa 12 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7757745817533814 - Time: 0.48s
+==========================================PERSON 13======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 13 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7898786403193666 - Time: 1.464s
+Pessoa 13 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6398927053463958 - Time: 0.95s
+Pessoa 13 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.767064704510155 - Time: 2.117s
+Pessoa 13 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7853627325498562 - Time: 4.531s
+Pessoa 13 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7819648809030096 - Time: 2.852s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 13 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7757237013457933 - Time: 0.121s
+Pessoa 13 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6416969113938265 - Time: 0.093s
+Pessoa 13 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.744595271418447 - Time: 0.178s
+Pessoa 13 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7690396844424151 - Time: 0.453s
+Pessoa 13 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.772738448448658 - Time: 0.317s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 13 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.36541454693271813 - Time: 0.122s
+Pessoa 13 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.14185847359301285 - Time: 0.103s
+Pessoa 13 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3337472415403111 - Time: 0.241s
+Pessoa 13 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3800369284156075 - Time: 0.587s
+Pessoa 13 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3736933361265552 - Time: 0.481s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 13 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8662549143654241 - Time: 0.117s
+Pessoa 13 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5908041215685439 - Time: 0.094s
+Pessoa 13 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8467271040049189 - Time: 0.149s
+Pessoa 13 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8634151226805329 - Time: 0.364s
+Pessoa 13 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8639528814311186 - Time: 0.284s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 13 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7171964679827395 - Time: 0.121s
+Pessoa 13 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6284484422568 - Time: 0.091s
+Pessoa 13 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6791682045265574 - Time: 0.2s
+Pessoa 13 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7069308843274035 - Time: 0.463s
+Pessoa 13 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7099553971511625 - Time: 0.34s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 13 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3115107925995254 - Time: 0.125s
+Pessoa 13 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.10206764069356075 - Time: 0.092s
+Pessoa 13 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2748652613517563 - Time: 0.234s
+Pessoa 13 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.33543088667290144 - Time: 0.568s
+Pessoa 13 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.31946036987890153 - Time: 0.476s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 13 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8550145433859399 - Time: 0.117s
+Pessoa 13 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6659527992674195 - Time: 0.092s
+Pessoa 13 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8322092003101984 - Time: 0.144s
+Pessoa 13 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8460074059068882 - Time: 0.372s
+Pessoa 13 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8442418256183037 - Time: 0.287s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 13 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7220151258254213 - Time: 0.124s
+Pessoa 13 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5946139660043326 - Time: 0.106s
+Pessoa 13 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6996625596182626 - Time: 0.189s
+Pessoa 13 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7044396663118551 - Time: 0.45s
+Pessoa 13 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7218437074805553 - Time: 0.328s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 13 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2840727493009255 - Time: 0.128s
+Pessoa 13 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1003505128015472 - Time: 0.105s
+Pessoa 13 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2629531753303377 - Time: 0.239s
+Pessoa 13 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3155496849717741 - Time: 0.615s
+Pessoa 13 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2868821851971831 - Time: 0.48s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 13 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8648750701116541 - Time: 0.119s
+Pessoa 13 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6058267948528515 - Time: 0.093s
+Pessoa 13 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8387090289440877 - Time: 0.139s
+Pessoa 13 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8490806479292761 - Time: 0.36s
+Pessoa 13 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8525828991672147 - Time: 0.29s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 13 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7465459994931221 - Time: 0.122s
+Pessoa 13 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6477506814321268 - Time: 0.094s
+Pessoa 13 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7382729753618007 - Time: 0.181s
+Pessoa 13 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7474120795274819 - Time: 0.491s
+Pessoa 13 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.749522643932267 - Time: 0.321s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 13 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3429576665930247 - Time: 0.139s
+Pessoa 13 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.11583104807488005 - Time: 0.092s
+Pessoa 13 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2936739006496588 - Time: 0.234s
+Pessoa 13 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3442221741029619 - Time: 0.578s
+Pessoa 13 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.34613409374769866 - Time: 0.466s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 13 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 13 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8623926343067894 - Time: 0.124s
+Pessoa 13 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.7155516491169547 - Time: 0.095s
+Pessoa 13 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.843115902553946 - Time: 0.136s
+Pessoa 13 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8606363788435869 - Time: 0.363s
+Pessoa 13 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8632793649818261 - Time: 0.3s
+==========================================PERSON 14======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 14 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7851596550542841 - Time: 0.761s
+Pessoa 14 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4784701012834656 - Time: 0.483s
+Pessoa 14 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7556295427942729 - Time: 1.215s
+Pessoa 14 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.779014919700817 - Time: 2.665s
+Pessoa 14 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7814927796740563 - Time: 1.556s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 14 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6965534223156845 - Time: 0.07s
+Pessoa 14 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5612716128270411 - Time: 0.052s
+Pessoa 14 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6763424532779345 - Time: 0.109s
+Pessoa 14 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7069528171190625 - Time: 0.316s
+Pessoa 14 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7035756652315668 - Time: 0.233s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 14 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3397407724098369 - Time: 0.068s
+Pessoa 14 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.17640563205994717 - Time: 0.051s
+Pessoa 14 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.29383057770569077 - Time: 0.129s
+Pessoa 14 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.33335190012350563 - Time: 0.334s
+Pessoa 14 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3284296096768728 - Time: 0.265s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 14 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.9034134868025351 - Time: 0.064s
+Pessoa 14 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6280903831229419 - Time: 0.051s
+Pessoa 14 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8835282367102237 - Time: 0.07s
+Pessoa 14 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.91291344797288 - Time: 0.216s
+Pessoa 14 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.9080204816120236 - Time: 0.18s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 14 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.5700610787024841 - Time: 0.065s
+Pessoa 14 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4455130146300596 - Time: 0.051s
+Pessoa 14 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5434471852386296 - Time: 0.106s
+Pessoa 14 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.5951349676565612 - Time: 0.287s
+Pessoa 14 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.5661743491060591 - Time: 0.228s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 14 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.29543533351293283 - Time: 0.067s
+Pessoa 14 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2193917865473593 - Time: 0.05s
+Pessoa 14 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.27766462478797255 - Time: 0.118s
+Pessoa 14 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2893005103009779 - Time: 0.321s
+Pessoa 14 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.28545034837056726 - Time: 0.249s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 14 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.759613474307504 - Time: 0.061s
+Pessoa 14 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.3665498051880324 - Time: 0.05s
+Pessoa 14 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7371481895227435 - Time: 0.078s
+Pessoa 14 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7601472835805869 - Time: 0.239s
+Pessoa 14 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.764739423947224 - Time: 0.193s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 14 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7950925637297109 - Time: 0.067s
+Pessoa 14 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5661808229272505 - Time: 0.05s
+Pessoa 14 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7538884011841958 - Time: 0.097s
+Pessoa 14 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7662097313655151 - Time: 0.269s
+Pessoa 14 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7908491116566665 - Time: 0.211s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 14 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.381664170105406 - Time: 0.068s
+Pessoa 14 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.2593838239679991 - Time: 0.051s
+Pessoa 14 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.33549110364857404 - Time: 0.129s
+Pessoa 14 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3776487503994779 - Time: 0.331s
+Pessoa 14 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.36310295886037736 - Time: 0.274s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 14 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8689251419164492 - Time: 0.074s
+Pessoa 14 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.6050380887068375 - Time: 0.062s
+Pessoa 14 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8419941767497974 - Time: 0.081s
+Pessoa 14 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8741732169806603 - Time: 0.255s
+Pessoa 14 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.885686537497002 - Time: 0.191s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 14 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6919266408624041 - Time: 0.073s
+Pessoa 14 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5512447072570985 - Time: 0.051s
+Pessoa 14 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6673554410266932 - Time: 0.105s
+Pessoa 14 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7028671772013776 - Time: 0.285s
+Pessoa 14 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.70073967447776 - Time: 0.215s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 14 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.35030056250610675 - Time: 0.069s
+Pessoa 14 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.21145305769972209 - Time: 0.053s
+Pessoa 14 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3274806484688994 - Time: 0.119s
+Pessoa 14 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.35785574729559355 - Time: 0.321s
+Pessoa 14 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.35666407541096834 - Time: 0.257s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 14 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 14 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.91528421380463 - Time: 0.065s
+Pessoa 14 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.7382547129040611 - Time: 0.051s
+Pessoa 14 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.9070802175150611 - Time: 0.07s
+Pessoa 14 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.9146819159851141 - Time: 0.232s
+Pessoa 14 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.9195230492158629 - Time: 0.202s
+==========================================PERSON 15======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 15 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7223846507727043 - Time: 1.576s
+Pessoa 15 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4181084079035805 - Time: 1.057s
+Pessoa 15 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6797523504723708 - Time: 2.985s
+Pessoa 15 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7160394237890758 - Time: 6.12s
+Pessoa 15 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7084342846924812 - Time: 3.577s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 15 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6396714538003655 - Time: 0.131s
+Pessoa 15 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5661502160176756 - Time: 0.101s
+Pessoa 15 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.605831607080203 - Time: 0.25s
+Pessoa 15 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6350339311089883 - Time: 0.573s
+Pessoa 15 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6297664541969473 - Time: 0.382s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 15 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3120714459787123 - Time: 0.142s
+Pessoa 15 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.21430279315154088 - Time: 0.105s
+Pessoa 15 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.28157078097971816 - Time: 0.27s
+Pessoa 15 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3310758890561166 - Time: 0.65s
+Pessoa 15 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.30757605354185324 - Time: 0.498s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 15 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8513360915732937 - Time: 0.13s
+Pessoa 15 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5133322544891443 - Time: 0.117s
+Pessoa 15 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8376114422461635 - Time: 0.161s
+Pessoa 15 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8456120381292654 - Time: 0.408s
+Pessoa 15 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8484803273771918 - Time: 0.314s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 15 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6523725612416307 - Time: 0.135s
+Pessoa 15 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5283116996471512 - Time: 0.107s
+Pessoa 15 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.613141870462065 - Time: 0.241s
+Pessoa 15 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6351441621783586 - Time: 0.567s
+Pessoa 15 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6364490955174551 - Time: 0.398s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 15 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.3328273651440798 - Time: 0.148s
+Pessoa 15 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.19425932905496174 - Time: 0.105s
+Pessoa 15 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2860467671536738 - Time: 0.286s
+Pessoa 15 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.32879705064275777 - Time: 0.644s
+Pessoa 15 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.322436750933807 - Time: 0.528s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 15 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7604146059218018 - Time: 0.128s
+Pessoa 15 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.43171481521055927 - Time: 0.102s
+Pessoa 15 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7326762222409402 - Time: 0.174s
+Pessoa 15 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7519951827254913 - Time: 0.454s
+Pessoa 15 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7553320917325675 - Time: 0.345s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 15 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6833385148066196 - Time: 0.138s
+Pessoa 15 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5624428179185283 - Time: 0.102s
+Pessoa 15 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6477557685214707 - Time: 0.215s
+Pessoa 15 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6712726788933229 - Time: 0.522s
+Pessoa 15 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6704749767126863 - Time: 0.373s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 15 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.298542691353592 - Time: 0.141s
+Pessoa 15 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.15659552051797437 - Time: 0.101s
+Pessoa 15 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.26114548113944097 - Time: 0.255s
+Pessoa 15 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3005946391352651 - Time: 0.624s
+Pessoa 15 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2865705850554733 - Time: 0.515s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 15 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8433276169531616 - Time: 0.131s
+Pessoa 15 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5950444478998016 - Time: 0.104s
+Pessoa 15 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8226743474637228 - Time: 0.163s
+Pessoa 15 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8244429714347332 - Time: 0.418s
+Pessoa 15 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8427114780461447 - Time: 0.322s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 15 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7272844829525984 - Time: 0.138s
+Pessoa 15 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5280748963217058 - Time: 0.098s
+Pessoa 15 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7032428615482529 - Time: 0.206s
+Pessoa 15 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7351187050499604 - Time: 0.508s
+Pessoa 15 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7361263100970128 - Time: 0.348s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 15 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.35423019302817005 - Time: 0.13s
+Pessoa 15 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.12350905994331858 - Time: 0.097s
+Pessoa 15 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2995862667474334 - Time: 0.239s
+Pessoa 15 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.36355375492094033 - Time: 0.601s
+Pessoa 15 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.3471896881065385 - Time: 0.482s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 15 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8978185848978291 - Time: 0.13s
+Pessoa 15 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.599288533017748 - Time: 0.098s
+Pessoa 15 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.8799756804581094 - Time: 0.138s
+Pessoa 15 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.8936605306793883 - Time: 0.369s
+Pessoa 15 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.8996594345112665 - Time: 0.3s
+==========================================PERSON 16======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 16 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6285307588437041 - Time: 12.272s
+Pessoa 16 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4306247432014911 - Time: 7.342s
+Pessoa 16 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5913078179694176 - Time: 21.024s
+Pessoa 16 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6450986448635715 - Time: 44.447s
+Pessoa 16 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6323656068974735 - Time: 30.583s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 16 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6315021853043131 - Time: 0.906s
+Pessoa 16 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4802340812137572 - Time: 0.583s
+Pessoa 16 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6023368876434969 - Time: 1.526s
+Pessoa 16 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6420940220773704 - Time: 3.377s
+Pessoa 16 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6340256987448323 - Time: 2.329s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 16 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2852673391257808 - Time: 0.922s
+Pessoa 16 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1356171549247728 - Time: 0.67s
+Pessoa 16 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.24730609850345564 - Time: 1.897s
+Pessoa 16 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.314908520816512 - Time: 3.849s
+Pessoa 16 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2924399626235811 - Time: 2.891s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 16 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.8041208024882115 - Time: 0.825s
+Pessoa 16 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.4612863116827328 - Time: 0.58s
+Pessoa 16 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7814011130905991 - Time: 1.062s
+Pessoa 16 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7971424011827483 - Time: 2.405s
+Pessoa 16 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7967240836647707 - Time: 1.858s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 16 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6511760847529059 - Time: 0.868s
+Pessoa 16 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4042152303619699 - Time: 0.603s
+Pessoa 16 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6111632942825821 - Time: 1.536s
+Pessoa 16 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6560771980252413 - Time: 3.446s
+Pessoa 16 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6452095200634655 - Time: 2.24s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 16 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2288801781327264 - Time: 0.889s
+Pessoa 16 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.12600698004483715 - Time: 0.635s
+Pessoa 16 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.20023589313291884 - Time: 1.774s
+Pessoa 16 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.2495930294111411 - Time: 3.774s
+Pessoa 16 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.23129284843019202 - Time: 2.956s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 16 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7257937281790231 - Time: 0.896s
+Pessoa 16 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.3204301727417037 - Time: 0.645s
+Pessoa 16 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.684467636664865 - Time: 1.198s
+Pessoa 16 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7159332935559577 - Time: 2.569s
+Pessoa 16 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7085651769835571 - Time: 2.009s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 16 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.7496763704194557 - Time: 0.11s
+Pessoa 16 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.6013213047922543 - Time: 0.076s
+Pessoa 16 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.7254362619177559 - Time: 0.167s
+Pessoa 16 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.7489684441400917 - Time: 0.481s
+Pessoa 16 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.7455590438378766 - Time: 0.333s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 16 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.4403400233235229 - Time: 0.109s
+Pessoa 16 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.35854658269941175 - Time: 0.079s
+Pessoa 16 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.3916853753830075 - Time: 0.199s
+Pessoa 16 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.42803253665109364 - Time: 0.502s
+Pessoa 16 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.4191357895105946 - Time: 0.414s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 16 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.9506515690447012 - Time: 0.134s
+Pessoa 16 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.8787391748095 - Time: 0.076s
+Pessoa 16 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.964005023820335 - Time: 0.11s
+Pessoa 16 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.9670286730166058 - Time: 0.314s
+Pessoa 16 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.9591921862705 - Time: 0.269s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 0 and SensorID = 2 order by TimeStamp
+Pessoa 16 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6639688866925635 - Time: 0.851s
+Pessoa 16 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5517172600601503 - Time: 0.563s
+Pessoa 16 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.636200799581558 - Time: 1.293s
+Pessoa 16 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6719030423293668 - Time: 2.841s
+Pessoa 16 - Position: WAIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6626816211467086 - Time: 1.883s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 1 and SensorID = 2 order by TimeStamp
+Pessoa 16 - Position: WAIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.284274595701037 - Time: 0.746s
+Pessoa 16 - Position: WAIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.1468428070892581 - Time: 0.51s
+Pessoa 16 - Position: WAIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.24997677265193965 - Time: 1.495s
+Pessoa 16 - Position: WAIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3131390801032023 - Time: 3.185s
+Pessoa 16 - Position: WAIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.2925541571813224 - Time: 2.49s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 16 and SensorType = 2 and SensorID = 2 order by TimeStamp
+Pessoa 16 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7856095565096757 - Time: 0.704s
+Pessoa 16 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.37565140932084756 - Time: 0.488s
+Pessoa 16 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7602377905871565 - Time: 0.899s
+Pessoa 16 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7830104469317228 - Time: 2.118s
+Pessoa 16 - Position: WAIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7762336797249889 - Time: 1.643s
+==========================================PERSON 17======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 0 and SensorID = 0 order by TimeStamp
+Pessoa 17 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6901109105549116 - Time: 2.796s
+Pessoa 17 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.4801115323536571 - Time: 1.771s
+Pessoa 17 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6527718655665354 - Time: 5.435s
+Pessoa 17 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6910555902019758 - Time: 11.338s
+Pessoa 17 - Position: RIGHTPOCKET - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6890145677047015 - Time: 6.257s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 0 and SensorID = 1 order by TimeStamp
+Pessoa 17 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6172958771268353 - Time: 0.223s
+Pessoa 17 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5710317201922905 - Time: 0.161s
+Pessoa 17 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5767025127044801 - Time: 0.398s
+Pessoa 17 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6223728879322742 - Time: 0.915s
+Pessoa 17 - Position: CHEST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6154705792062355 - Time: 0.569s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 1 order by TimeStamp
+Pessoa 17 - Position: CHEST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.22213734051624984 - Time: 0.225s
+Pessoa 17 - Position: CHEST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.20856745313830283 - Time: 0.157s
+Pessoa 17 - Position: CHEST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2175124808629286 - Time: 0.485s
+Pessoa 17 - Position: CHEST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.24535935987115648 - Time: 1.092s
+Pessoa 17 - Position: CHEST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.23471133793473736 - Time: 0.685s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 1 order by TimeStamp
+Pessoa 17 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7165078294070335 - Time: 0.212s
+Pessoa 17 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.504242392796512 - Time: 0.157s
+Pessoa 17 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.6885108704776569 - Time: 0.271s
+Pessoa 17 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7047395256298516 - Time: 0.656s
+Pessoa 17 - Position: CHEST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.709044595157646 - Time: 0.498s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 0 and SensorID = 3 order by TimeStamp
+Pessoa 17 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6016934079991945 - Time: 0.231s
+Pessoa 17 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5272474911106176 - Time: 0.161s
+Pessoa 17 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.5597036789129974 - Time: 0.411s
+Pessoa 17 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.608229596036432 - Time: 0.91s
+Pessoa 17 - Position: WRIST - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6108074501311224 - Time: 0.597s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 3 order by TimeStamp
+Pessoa 17 - Position: WRIST - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2228126604613565 - Time: 0.226s
+Pessoa 17 - Position: WRIST - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.16389458185355138 - Time: 0.16s
+Pessoa 17 - Position: WRIST - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2126090256308518 - Time: 0.454s
+Pessoa 17 - Position: WRIST - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.24209204333045417 - Time: 1.065s
+Pessoa 17 - Position: WRIST - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.23459692129398343 - Time: 0.69s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 3 order by TimeStamp
+Pessoa 17 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.6803721607653406 - Time: 0.212s
+Pessoa 17 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.5354145545204395 - Time: 0.16s
+Pessoa 17 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.6530929999537752 - Time: 0.286s
+Pessoa 17 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.6694635950943912 - Time: 0.689s
+Pessoa 17 - Position: WRIST - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.6807685772237 - Time: 0.512s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 0 and SensorID = 4 order by TimeStamp
+Pessoa 17 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: KNeighborsClassifier - Score: 0.6674258754399764 - Time: 0.224s
+Pessoa 17 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: GaussianNB - Score: 0.5706996309111442 - Time: 0.159s
+Pessoa 17 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: DecisionTreeClassifier - Score: 0.6226925789511313 - Time: 0.385s
+Pessoa 17 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: RandomForestClassifier - Score: 0.6618565089856351 - Time: 0.867s
+Pessoa 17 - Position: ANKLE - Sensor: ACCELEROMETER - Metodo: ExtraTreesClassifier - Score: 0.6661665362703054 - Time: 0.563s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 4 order by TimeStamp
+Pessoa 17 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: KNeighborsClassifier - Score: 0.2802905527778855 - Time: 0.224s
+Pessoa 17 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: GaussianNB - Score: 0.20401840634755786 - Time: 0.157s
+Pessoa 17 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: DecisionTreeClassifier - Score: 0.2660558939627512 - Time: 0.457s
+Pessoa 17 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: RandomForestClassifier - Score: 0.3090472072034035 - Time: 1.035s
+Pessoa 17 - Position: ANKLE - Sensor: GYROSCOPE - Metodo: ExtraTreesClassifier - Score: 0.29221360237097527 - Time: 0.687s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 4 order by TimeStamp
+Pessoa 17 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: KNeighborsClassifier - Score: 0.7522970818496517 - Time: 0.214s
+Pessoa 17 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: GaussianNB - Score: 0.43528664747311974 - Time: 0.159s
+Pessoa 17 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: DecisionTreeClassifier - Score: 0.7197324750112962 - Time: 0.282s
+Pessoa 17 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: RandomForestClassifier - Score: 0.7379943843627607 - Time: 0.683s
+Pessoa 17 - Position: ANKLE - Sensor: MAGNETOMETER - Metodo: ExtraTreesClassifier - Score: 0.7444216853910476 - Time: 0.492s
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 0 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 0 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 1 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 17 and SensorType = 2 and SensorID = 2 order by TimeStamp
+==========================================PERSON 18======================================
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 0 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 0 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 1 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 1 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 1 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 1 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 1 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 1 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 3 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 3 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 3 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 3 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 3 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 3 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 4 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 4 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 4 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 4 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 4 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 4 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 0 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 1 and SensorID = 2 order by TimeStamp
++ Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 2 order by TimeStamp
+* ATEN플O NENHUMA LINHA PARA: Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 18 and SensorType = 2 and SensorID = 2 order by TimeStamp
+================BEST RESULT=====================
+{'Classifier': 'KNeighborsClassifier', 'Person': 8, 'Sensor': 'ACCELEROMETER', 'Position': 'WAIST', 'Socore': 1.0}
