@@ -61,9 +61,10 @@ label = selected_columns[-1]
 
 #--VERIFICANDO RESULTADO COM MATRIZ DE CONFUSÃO--#
 data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 2 order by TimeStamp", con_dataset)
-classifier = neighbors.KNeighborsClassifier(n_neighbors=5)
-verify_confusion_matrix(classifier, data, features, label)
+#classifier = neighbors.KNeighborsClassifier(n_neighbors=5)
+#verify_confusion_matrix(classifier, data, features, label)
 
 #--CALCULANDO CARACTERÍSTICAS--#
 #utils.split_dataframe_by_timestamp(all_data, "TimeStamp", 50)
+
 
