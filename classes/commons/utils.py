@@ -194,8 +194,8 @@ def plot_confusion_matrix(cm, classes,
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    plt.ylabel('Rótulo verdadeiro')
+    plt.xlabel('Rótulo predito')
 
 
 def slice_features(features, length):
@@ -313,9 +313,18 @@ def split_dataframe_by_timestamp(data, timestamp_label, timestamp_interval):
 
     return ""
 
-#Test machineleargin algorithms with all dataset
-def verify_accuracy_cross_validation(con_sql, sqlite_dataset_name, selected_columns, person_len, features_keys, label_key,n_fold):
-    best_result = {"Classifier":"", "Person":0, "Sensor":0, "Position":0, "Socore":0.0}
+#Test specific algorithm with cross validation
+def verify_accuracy_cross_validation(data, classifier, features_keys, label_key,n_fold):
+    features, labels = split_features_labels(data, features_keys, label_key)
+    t = time.time()
+    scores = cross_val_score(classifier, features, labels, cv=n_fold)
+    score = np.mean(scores)
+    timer = round(float(time.time() - t), 3)
+    print("Score {} = {}, Tempo = {}".format(classifier.__class__.__name__, score, timer))
+
+#Test machinelearning algorithms with all dataset
+def verify_accuracy_cross_validation_all_classify(con_sql, sqlite_dataset_name, selected_columns, person_len, features_keys, label_key,n_fold):
+    results = []
     for person in range(1,person_len+1):
         file_print("==========================================PERSON {}======================================".format(person), LOG_FILE, True)
         for position, position_value in UmaAdlConverter.SENSOR.__dict__.items(): # Para cada dispositivo
@@ -339,22 +348,52 @@ def verify_accuracy_cross_validation(con_sql, sqlite_dataset_name, selected_colu
                     t = time.time()
                     scores = cross_val_score(clf, features, labels, cv=n_fold)
                     score = np.mean(scores)
-                    file_print("Pessoa {} - Position: {} - Sensor: {} - Metodo: {} - Score: {} - Time: {}s".format(person, position, sensor, clf.__class__.__name__, score, round(float(time.time()-t), 3)), LOG_FILE, True)
-                    if score > best_result["Socore"]:
-                        best_result = {"Classifier": clf.__class__.__name__, "Person": person, "Sensor":sensor , "Position":position , "Socore":score}
+                    sd = np.std(scores)
+                    timer = round(float(time.time()-t), 3)
+                    file_print("Pessoa {} - Position: {} - Sensor: {} - Metodo: {} - Score: {} - SD: {} - Time: {}s".format(person, position, sensor, clf.__class__.__name__, score, sd, timer), LOG_FILE, True)
+                    results.append({"classifier":clf.__class__.__name__, "person": person, "sensorName": sensor, "position": position, "dataset_len": len(all_data),"activity_len": len(all_data.activity.unique()), "sql": consulta, "score": score, "sd": sd, "time": timer})
 
-    file_print("================BEST RESULT=====================",LOG_FILE, True)
-    file_print(str(best_result), LOG_FILE, True)
+    #Salvando a saída no banco de dados.
+    dataset = sqlite3.connect("output.db")
+    df_results = pd.DataFrame(results)
+    df_results.to_sql("output", dataset,if_exists='replace', index=False)
+    file_print("================Finish verify accuracy=====================", LOG_FILE, True)
 
-def verify_confusion_matrix(classifier, data, features_keys, label_key):
-    features_train, features_test, labels_train, labels_test = preprocess(data, features_keys, label_key, 0.8, 50)
+def plot_accuracy_by_position(con_sql, classifier, sqlite_dataset_name, selected_columns, person):
+    colors = {"ACCELEROMETER":"b", "GYROSCOPE":"g", "MAGNETOMETER":"r"}
+    translate_sensor = {"ACCELEROMETER": "Acelerômetro", "GYROSCOPE": "Giroscópio", "MAGNETOMETER": "Magnetômetro"}
+    translate_position = {"CHEST":"Torax", "WRIST":"Pulso", "ANKLE":"Tornozelo", "WAIST":"Cintura", "RIGHTPOCKET":"Bolso Direito"}
+
+    for sensor, sensor_value in UmaAdlConverter.SENSORTYPE.__dict__.items():  # Para cada sensor (giroscópio, acelerômetro, magnetômetro)
+        x = []
+        y = []
+        for position, position_value in UmaAdlConverter.SENSOR.__dict__.items():  # Para cada dispositivo
+            consulta = "Select {} from {} where classifier = '{}' and person = '{}' and sensorName = '{}' and position = '{}'".format(
+                ", ".join(selected_columns), sqlite_dataset_name, classifier, person, sensor, position)
+            print(consulta)
+            all_data = get_data_sql_query(consulta, con_sql)
+            if(len(all_data)>0):
+                x.append(translate_position[all_data.position[0]])
+                y.append(int(1000*round(all_data.score[0], 3))/10.0)
+                #plt.bar(all_data.position[0], all_data.score[0], width=0.5, align='center', color=colors[sensor], label= translate[sensor])
+        plt.bar(x, y, width=0.5, align='center', color=colors[sensor],
+                label=translate_sensor[sensor])
+        for i in range(len(x)):
+            plt.text(x[i], y[i] + 0.2, s="{}%".format(y[i]), size=10)
+
+    plt.legend(loc=3)
+    plt.subplots_adjust(bottom=0.2, top=0.98)
+    plt.savefig('accuracy_by_position.png')
+
+def verify_confusion_matrix(classifier, data, features_keys, label_key, title):
+    features_train, features_test, labels_train, labels_test = preprocess(data, features_keys, label_key, 0.9, 50)
     classifier.fit(features_train, labels_train)
     pred = classifier.predict(features_test)
     cnf_matrix = confusion_matrix(labels_test, pred, labels=np.unique(labels_test))
     np.set_printoptions(precision=2)
     class_names = np.unique(labels_test)
     plt.figure()
-    plot_confusion_matrix(cnf_matrix, class_names, True, title='Confusion matrix, for Knn')
+    plot_confusion_matrix(cnf_matrix, class_names, True, title=title)
     plt.show()
 
 def connect_sql(filename):
@@ -370,9 +409,39 @@ def file_print(text, output, p=False):
     file.write(text+"\n")
     file.close()
 
+def translate_activities(data, activity_label):
+    data[activity_label] = data[activity_label].replace("Bending", "Inclinar-se")
+    data[activity_label] = data[activity_label].replace("Hopping", "Saltar")
+    data[activity_label] = data[activity_label].replace("Jogging", "Correr")
+    data[activity_label] = data[activity_label].replace("LyingDown", "Deitar")
+    data[activity_label] = data[activity_label].replace("Sitting", "Sentar")
+    data[activity_label] = data[activity_label].replace("Walking", "Caminhar")
+    data[activity_label] = data[activity_label].replace("backwardFall", "Queda trás")
+    data[activity_label] = data[activity_label].replace("forwardFall", "Queda frontal")
+    data[activity_label] = data[activity_label].replace("lateralFall", "Queda lateral")
+
+def plot_accuracy_by_algorithm(x,y):
+    plt.bar(x, y, width=0.50, align='center')
+    plt.xlabel('Algoritmo')
+    plt.ylabel('Acurácia')
+    for i in range(len(x)):
+        plt.text(x[i], y[i]+0.2, s="{}%".format(y[i]), size=10)
+    plt.subplots_adjust(bottom=0.2, top=0.98)
+    plt.savefig('accuracy_by_algorithm.png')
+
+def plot_time_by_algorithm(x,y):
+    plt.bar(x, y, width=0.50, align='center')
+    plt.xlabel('Algoritmo')
+    plt.ylabel('Tempo em segundos')
+    for i in range(len(x)):
+        plt.text(x[i], y[i]+0.2, s="{}s".format(y[i]), size=10)
+    plt.subplots_adjust(bottom=0.2, top=0.98)
+    plt.savefig('time_by_algorithm.png')
+
+
 def knn_verify_accuracy_cross_validation(data, features_keys, label_key,n_fold, test_k,show_matrix):
-    features_all, labels_all = utils.split_features_labels(data, features_keys, label_key)
-    features_train, features_test, labels_train, labels_test = utils.preprocess(data, features_keys, label_key, 0.8, 50)
+    features_all, labels_all = split_features_labels(data, features_keys, label_key)
+    features_train, features_test, labels_train, labels_test = preprocess(data, features_keys, label_key, 0.8, 50)
 
     if test_k:
         a = []

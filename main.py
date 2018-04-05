@@ -57,13 +57,34 @@ label = selected_columns[-1]
 #plt.show()
 
 #--SCORES PARA TODOS OS METODOS--##
-#verify_accuracy_cross_validation(con_dataset, SQLITE_DATASET_NAME, selected_columns, 18, features, label, 10)
+#verify_accuracy_cross_validation_all_classify(con_dataset, SQLITE_DATASET_NAME, selected_columns, 18, features, label, 10)
+
+#--SCORE PARA O SVM--##
+#data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 2 order by TimeStamp", con_dataset)
+#clf = svm.SVC()
+#verify_accuracy_cross_validation(data, clf, features, label, 10)
 
 #--VERIFICANDO RESULTADO COM MATRIZ DE CONFUSÃO--#
-data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 8 and SensorType = 0 and SensorID = 2 order by TimeStamp", con_dataset)
-#classifier = neighbors.KNeighborsClassifier(n_neighbors=5)
-#verify_confusion_matrix(classifier, data, features, label)
+#data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 2 order by TimeStamp", con_dataset)
+#classifier = ExtraTreesClassifier(max_depth=100, random_state=0)
+#translate_activities(data, "activity")
+#verify_confusion_matrix(classifier, data, features, label, "ExtraTrees - Matríz de confusão.")
 
+#--IMPRIMINDO HISTOGRAMA DE ACURÁCIA--#
+#x = ["k-NN", "NB", "DT", "RF", "ET", "SVM","RNN"]
+#y = [89.7, 59.9, 88.2, 89.3, 89.9, 82.2, 70.62]
+#plot_accuracy_by_algorithm(x, y)
+
+#--IMPRIMINDO TEMPO DOS ALGORITMOS--#
+#x = ["k-NN", "NB", "DT", "RF", "ET", "SVM", "RNN"]
+#y = [0.216, 0.181, 0.234, 0.646, 0.544, 22.66, 1620.0]
+x = ["k-NN", "NB", "DT", "RF", "ET", "SVM"]
+y = [0.216, 0.181, 0.234, 0.646, 0.544, 22.66]
+plot_time_by_algorithm(x, y)
+
+#--IMPRIMINDO ACURÁCIA POR SENSOR--#
+#con_output = sqlite3.connect("output.db")
+#plot_accuracy_by_position(con_output, "ExtraTreesClassifier", "output", "*", 15)
 #--CALCULANDO CARACTERÍSTICAS--#
 #utils.split_dataframe_by_timestamp(all_data, "TimeStamp", 50)
 

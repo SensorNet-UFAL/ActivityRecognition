@@ -21,7 +21,7 @@ class UmaAdlConverter(Converter):
     SENSOR = Struct({"RIGHTPOCKET": 0, "CHEST": 1, "WRIST": 3, "ANKLE": 4, "WAIST": 2})
     KEYS = Struct({"X": "X-Axis", "Y": "Y-Axis", "Z": "Z-Axis", "SENSORTYPE": "SensorType", "TIMESTAMP": "TimeStamp",
                    "FILE": "file", "ACTIVITY": "activity", "SENSORID": "SensorID"})
-    SENSORTYPE = Struct({"ACCELEROMETER": 0, "GYROSCOPE": 1, "MAGNETOMETER": 2})
+    SENSORTYPE = Struct({"MAGNETOMETER": 2, "ACCELEROMETER": 0, "GYROSCOPE": 1})
 
     def load_data(self):
         Converter.load_csv_files(self, 40, ";")  # load csv data in many files
