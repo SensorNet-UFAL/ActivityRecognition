@@ -68,23 +68,23 @@ label = selected_columns[-1]
 #data = get_data_sql_query("Select TimeStamp, XAxis, YAxis, ZAxis, activity from umafall where person = 15 and SensorType = 2 and SensorID = 2 order by TimeStamp", con_dataset)
 #classifier = ExtraTreesClassifier(max_depth=100, random_state=0)
 #translate_activities(data, "activity")
-#verify_confusion_matrix(classifier, data, features, label, "ExtraTrees - Matríz de confusão.")
+#verify_confusion_matrix(classifier, data, features, label, "ExtraTrees - Confunsion Matrix.")
 
 #--IMPRIMINDO HISTOGRAMA DE ACURÁCIA--#
 #x = ["k-NN", "NB", "DT", "RF", "ET", "SVM","RNN"]
 #y = [89.7, 59.9, 88.2, 89.3, 89.9, 82.2, 70.62]
-#plot_accuracy_by_algorithm(x, y)
+#plot_accuracy_by_algorithm(x, y, "Algorithm", "Accuracy")
 
 #--IMPRIMINDO TEMPO DOS ALGORITMOS--#
 #x = ["k-NN", "NB", "DT", "RF", "ET", "SVM", "RNN"]
 #y = [0.216, 0.181, 0.234, 0.646, 0.544, 22.66, 1620.0]
-x = ["k-NN", "NB", "DT", "RF", "ET", "SVM"]
-y = [0.216, 0.181, 0.234, 0.646, 0.544, 22.66]
-plot_time_by_algorithm(x, y)
+#x = ["k-NN", "NB", "DT", "RF", "ET", "SVM"]
+#y = [0.216, 0.181, 0.234, 0.646, 0.544, 22.66]
+#plot_time_by_algorithm(x, y,"Algorithm", "Time(s)")
 
 #--IMPRIMINDO ACURÁCIA POR SENSOR--#
-#con_output = sqlite3.connect("output.db")
-#plot_accuracy_by_position(con_output, "ExtraTreesClassifier", "output", "*", 15)
+con_output = sqlite3.connect("output.db")
+plot_accuracy_by_position(con_output, "ExtraTreesClassifier", "output", "*", 15)
 #--CALCULANDO CARACTERÍSTICAS--#
 #utils.split_dataframe_by_timestamp(all_data, "TimeStamp", 50)
 

@@ -194,8 +194,8 @@ def plot_confusion_matrix(cm, classes,
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('Rótulo verdadeiro')
-    plt.xlabel('Rótulo predito')
+    plt.ylabel('True Label')
+    plt.xlabel('Predicted Label')
 
 
 def slice_features(features, length):
@@ -361,8 +361,10 @@ def verify_accuracy_cross_validation_all_classify(con_sql, sqlite_dataset_name, 
 
 def plot_accuracy_by_position(con_sql, classifier, sqlite_dataset_name, selected_columns, person):
     colors = {"ACCELEROMETER":"b", "GYROSCOPE":"g", "MAGNETOMETER":"r"}
-    translate_sensor = {"ACCELEROMETER": "Acelerômetro", "GYROSCOPE": "Giroscópio", "MAGNETOMETER": "Magnetômetro"}
-    translate_position = {"CHEST":"Torax", "WRIST":"Pulso", "ANKLE":"Tornozelo", "WAIST":"Cintura", "RIGHTPOCKET":"Bolso Direito"}
+    #translate_sensor = {"ACCELEROMETER": "Acelerômetro", "GYROSCOPE": "Giroscópio", "MAGNETOMETER": "Magnetômetro"}
+    #translate_position = {"CHEST":"Torax", "WRIST":"Pulso", "ANKLE":"Tornozelo", "WAIST":"Cintura", "RIGHTPOCKET":"Bolso Direito"}
+    translate_sensor = {"ACCELEROMETER": "Accelerometer", "GYROSCOPE": "Gyroscope", "MAGNETOMETER": "Magnetometer"}
+    translate_position = {"CHEST":"Chest", "WRIST":"Wrist", "ANKLE":"Ankle", "WAIST":"Waist", "RIGHTPOCKET":"Right Pocket"}
 
     for sensor, sensor_value in UmaAdlConverter.SENSORTYPE.__dict__.items():  # Para cada sensor (giroscópio, acelerômetro, magnetômetro)
         x = []
@@ -394,7 +396,7 @@ def verify_confusion_matrix(classifier, data, features_keys, label_key, title):
     class_names = np.unique(labels_test)
     plt.figure()
     plot_confusion_matrix(cnf_matrix, class_names, True, title=title)
-    plt.show()
+    plt.savefig("confusion_matrix_extra_trees.png")
 
 def connect_sql(filename):
     sqlite3.connect(filename)
@@ -420,19 +422,19 @@ def translate_activities(data, activity_label):
     data[activity_label] = data[activity_label].replace("forwardFall", "Queda frontal")
     data[activity_label] = data[activity_label].replace("lateralFall", "Queda lateral")
 
-def plot_accuracy_by_algorithm(x,y):
+def plot_accuracy_by_algorithm(x,y, x_label, y_label):
     plt.bar(x, y, width=0.50, align='center')
-    plt.xlabel('Algoritmo')
-    plt.ylabel('Acurácia')
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
     for i in range(len(x)):
         plt.text(x[i], y[i]+0.2, s="{}%".format(y[i]), size=10)
     plt.subplots_adjust(bottom=0.2, top=0.98)
     plt.savefig('accuracy_by_algorithm.png')
 
-def plot_time_by_algorithm(x,y):
+def plot_time_by_algorithm(x,y, x_label, y_label):
     plt.bar(x, y, width=0.50, align='center')
-    plt.xlabel('Algoritmo')
-    plt.ylabel('Tempo em segundos')
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
     for i in range(len(x)):
         plt.text(x[i], y[i]+0.2, s="{}s".format(y[i]), size=10)
     plt.subplots_adjust(bottom=0.2, top=0.98)
