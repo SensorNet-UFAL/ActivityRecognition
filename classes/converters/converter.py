@@ -36,3 +36,4 @@ class Converter(object):
         self.csv_files = []
         self.data = {}
         self.path = path_arg
+        self.readings = []

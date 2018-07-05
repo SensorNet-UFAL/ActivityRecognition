@@ -15,7 +15,6 @@ class UmaAdlConverter(Converter):
     char_filename_split = '_'
     subject_name_index = 2
     subject_activity_index = 4
-    readings = []
 
     # Statical Variables
     SENSOR = Struct({"RIGHTPOCKET": 0, "CHEST": 1, "WRIST": 3, "ANKLE": 4, "WAIST": 2})
