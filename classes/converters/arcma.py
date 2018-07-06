@@ -1,4 +1,5 @@
 from classes.converters.converter import Converter
+import sqlite3
 
 class ARCMAConverter(Converter):
 
@@ -15,6 +16,11 @@ class ARCMAConverter(Converter):
 
         print(self.readings[0])
         print("Readings length: {}".format(len(self.readings)))
+
+    def save_to_sql(self, filename):
+        dataset = sqlite3.connect(filename)
+
+
 
 
 

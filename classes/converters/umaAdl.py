@@ -4,6 +4,7 @@ from classes.converters.converter import Converter
 from classes.commons.person import Person
 from classes.commons.struct import Struct
 import pandas as pd
+import sqlite3
 import pickle
 
 file_save_persons = "umaAdl.pkl"
