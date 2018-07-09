@@ -44,6 +44,8 @@ ADSD = "ADSD"
 
 LOG_FILE = "output.txt"
 
+DEBUG = True
+
 
 # ------------------------
 
@@ -402,7 +404,7 @@ def connect_sql(filename):
     sqlite3.connect(filename)
 
 def get_data_sql_query(query,dataset):
-    return pd.read_sql_query(query,dataset)
+    return pd.read_sql_query(query, dataset)
 
 def file_print(text, output, p=False):
     if p:
@@ -472,3 +474,7 @@ def knn_verify_accuracy_cross_validation(data, features_keys, label_key,n_fold, 
         plt.figure()
         plot_confusion_matrix(cnf_matrix, class_names, True, title='Confusion matrix, for Knn')
         plt.show()
+
+def print_debug(msg):
+    if DEBUG:
+        print(msg)

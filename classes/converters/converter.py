@@ -37,3 +37,4 @@ class Converter(object):
         self.data = {}
         self.path = path_arg
         self.readings = []
+        self.data_frame = {}

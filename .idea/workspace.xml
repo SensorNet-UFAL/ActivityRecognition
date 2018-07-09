@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="Funcionalidade para carregar os dados da base ARCMA concluída.">
+    <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/arcma.db" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/arcmaScript.py" />
+      <change beforePath="$PROJECT_DIR$/classes/commons/utils.py" afterPath="$PROJECT_DIR$/classes/commons/utils.py" />
       <change beforePath="$PROJECT_DIR$/classes/converters/arcma.py" afterPath="$PROJECT_DIR$/classes/converters/arcma.py" />
-      <change beforePath="$PROJECT_DIR$/classes/converters/umaAdl.py" afterPath="$PROJECT_DIR$/classes/converters/umaAdl.py" />
+      <change beforePath="$PROJECT_DIR$/classes/converters/converter.py" afterPath="$PROJECT_DIR$/classes/converters/converter.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,24 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="umaAdl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="53" column="176" lean-forward="true" selection-start-line="53" selection-start-column="176" selection-end-line="53" selection-end-column="176" />
+              <folding>
+                <element signature="e#189#242#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,9 +33,23 @@
       <file leaf-file-name="converter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="-223">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="17" />
+              <folding>
+                <element signature="e#24#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="umaAdl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1269">
+              <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +57,8 @@
       <file leaf-file-name="arcma.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="371">
+              <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -62,11 +69,21 @@
       <file leaf-file-name="arcmaScript.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arcmaScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="216">
+              <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="406" column="43" lean-forward="false" selection-start-line="406" selection-start-column="36" selection-end-line="406" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,6 +106,10 @@
       <find>pERSON</find>
       <find>file</find>
       <find>load_csv_files</find>
+      <find>uma_dataset_object</find>
+      <find>data</find>
+      <find>get_data_sql_query</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,11 +119,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/visualizacao.ipynb" />
-        <option value="$PROJECT_DIR$/classes/commons/utils.py" />
+        <option value="$PROJECT_DIR$/classes/converters/umaAdl.py" />
         <option value="$PROJECT_DIR$/classes/converters/converter.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/arcmaScript.py" />
-        <option value="$PROJECT_DIR$/classes/converters/umaAdl.py" />
+        <option value="$PROJECT_DIR$/classes/commons/utils.py" />
         <option value="$PROJECT_DIR$/classes/converters/arcma.py" />
       </list>
     </option>
@@ -129,7 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,19 +166,19 @@
             <path>
               <item name="ActivityRecognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="ActivityRecognition" type="462c0819:PsiDirectoryNode" />
-              <item name="databases" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ActivityRecognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="ActivityRecognition" type="462c0819:PsiDirectoryNode" />
               <item name="databases" type="462c0819:PsiDirectoryNode" />
-              <item name="arcma" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,18 +290,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530816906573</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Iniciando a função para converter a base csv para sql.">
+      <created>1530889760815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530889760815</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08956797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2312961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05978261" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33695653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33695653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -319,7 +347,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Iniciando a construção da classe responsável por carregar os dados da base de dados Activity Recognition from Single Chest-Mounted Accelerometer Data Set (URL: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+from+Single+Chest-Mounted+Accelerometer)" />
     <MESSAGE value="Funcionalidade para carregar os dados da base ARCMA concluída." />
-    <option name="LAST_COMMIT_MESSAGE" value="Funcionalidade para carregar os dados da base ARCMA concluída." />
+    <MESSAGE value="Iniciando a função para converter a base csv para sql." />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando a função para converter a base csv para sql." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,7 +379,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -365,7 +396,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -387,7 +420,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -412,7 +447,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -444,7 +481,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -459,7 +498,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -484,7 +525,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -506,7 +549,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,7 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -546,7 +593,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,7 +610,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -593,7 +644,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="63" />
-          <folding />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -640,53 +693,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6205">
-          <caret line="366" column="121" lean-forward="false" selection-start-line="366" selection-start-column="121" selection-end-line="366" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arcmaScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="-223">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+        <state relative-caret-position="1269">
+          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/arcmaScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="406" column="43" lean-forward="false" selection-start-line="406" selection-start-column="36" selection-end-line="406" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="53" column="176" lean-forward="true" selection-start-line="53" selection-start-column="176" selection-end-line="53" selection-end-column="176" />
+          <folding>
+            <element signature="e#189#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="371">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
