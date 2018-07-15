@@ -4,7 +4,7 @@ import sys
 sys.path.insert(0, '../')
 
 #--IMPORTAÇÕES DE BIBLIOTECAS AUXILIARES--#
-from classes.commons.utils import *
+import random
 import pandas as pd
 import numpy as np
 import sqlite3
@@ -18,7 +18,7 @@ from scipy.stats import kurtosis, skew
 from classes.commons.struct import Struct
 import plotly.plotly as py
 import plotly.graph_objs as go
-from classes.converters.umaAdl import UmaAdlConverter
+
 #--IMPORTAÇÃO DE BIBLIOTECAS DE MACHINE LEARNING--#
 from sklearn.model_selection import cross_val_score #Para realizar o Cross Validation
 from sklearn import neighbors # KNN
@@ -225,9 +225,9 @@ def get_measures(features_list, features_keys, label_key, measure):
                     aux.append(float(f[fk]))
             if fk is not label_key:
                 if measure == MEAN:
-                    aux_list[MEAN + "_" + fk] = numpy.mean(aux)
+                    aux_list[MEAN + "_" + fk] = np.mean(aux)
                 elif measure == SD:
-                    aux_list[SD + "_" + fk] = numpy.std(aux)
+                    aux_list[SD + "_" + fk] = np.std(aux)
                 elif measure == SKEW:
                     aux_list[SKEW + "_" + fk] = skew(aux)
                 elif measure == KURTOSIS:
@@ -240,7 +240,7 @@ def get_measures(features_list, features_keys, label_key, measure):
                     aux_list[ADSD + "_" + fk] = absolute_difference_list(aux, SD)
                 else:
                     print("None measure!")
-                    aux_list[fk] = numpy.mean(aux)
+                    aux_list[fk] = np.mean(aux)
             else:
                 aux_list[fk] = f[fk]
         m_list.append(aux_list)
@@ -254,9 +254,9 @@ def absolute_difference_list(list_in, method):
         if index > 0:
             list_out.append(math.fabs(l - list_in[index - 1]))
     if method == MEAN:
-        return numpy.mean(list_out)
+        return np.mean(list_out)
     if method == SD:
-        return numpy.std(list_out)
+        return np.std(list_out)
     return list_out
 
 

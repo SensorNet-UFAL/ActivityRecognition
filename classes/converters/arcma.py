@@ -27,6 +27,15 @@ class ARCMAConverter(Converter):
         dataset = sqlite3.connect(filename)
         print_debug("Converting DataFrame to SQL...")
         self.data_frame.to_sql(dataset_name, dataset, if_exists='replace', index=False)
+
+        #If the test and training lists have value
+        if len(self.traning_list) > 0 and len(self.test_list):
+            training_data_frame = pd.DataFrame(self.traning_list)
+            test_data_frame = pd.DataFrame(self.test_list)
+            training_data_frame.to_sql("{}_training".format(dataset_name), dataset, if_exists='replace', index=False)
+            test_data_frame.to_sql("{}_test".format(dataset_name), dataset, if_exists='replace', index=False)
+            print_debug("Database with training and test lists.")
+
         print_debug("SQLITE Conversion completed!")
         dataset.close()
 

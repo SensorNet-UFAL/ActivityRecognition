@@ -3,6 +3,8 @@ from os import listdir
 import csv
 import os.path
 from os.path import isfile, join
+from classes.commons.utils import print_debug
+import random
 import sys
 
 
@@ -37,4 +39,39 @@ class Converter(object):
         self.data = {}
         self.path = path_arg
         self.readings = []
+        self.traning_list = []
+        self.test_list = []
         self.data_frame = {}
+
+    #list  = list of objects to slice
+    def slice_to_training_test(self, training_proportion=0.8, seed=1):
+
+        print_debug("Calculating the size of lists...")
+        list_len = len(self.readings)
+        training_len = int((list_len*training_proportion))
+        test_len = list_len - training_len
+
+        #Initialzing the list of test and training
+
+        print_debug("Initializing the sets of training and test...")
+        training_list = self.readings.copy()
+        test_list = []
+
+        #List with test indexes to put in test list
+        print_debug("Calculating the random indexes...")
+        random.seed(seed)
+        test_index = random.sample(range(training_len), test_len)
+
+        print_debug("Loop for create the sets of training e test...")
+        for index in test_index:
+            test_list.append(self.readings[index])
+            training_list.pop(index)
+
+        print_debug("List len: {}".format(len(self.readings)))
+        print_debug("Training len: {}".format(len(training_list)))
+        print_debug("Test len: {}".format(len(test_list)))
+        print_debug("Training + test len: {}".format(len(training_list)+len(test_list)))
+
+        self.traning_list = training_list
+        self.test_list = test_list
+
