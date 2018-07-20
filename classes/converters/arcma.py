@@ -39,13 +39,20 @@ class ARCMAConverter(Converter):
         print_debug("SQLITE Conversion completed!")
         dataset.close()
 
-    def save_to_sql_training_test(self, filename, dataset_name):
+    def save_to_sql_training_test(self, filename):
         print_debug("Connect to SQLITE...")
         dataset = sqlite3.connect(filename)
         print_debug("Converting DataFrame to SQL...")
     #filename = name of sqlite db file
-    def get_readings_by_activity(self, filename, activity, features):
+    def get_readings_by_activity(self, filename,tablename, activity, features):
         dataset = sqlite3.connect(filename)
-        query = "select {} from arcma where activity = {} order by time".format(features, activity)
+        query = "select {} from {} where activity = {} order by time".format(features, tablename, activity)
         print(query)
         return get_data_sql_query(query, dataset)
+    #Do: function that return one list with activities
+    def load_list_of_activities(self, filename, tablename, features):
+        activities_indexes =[1,2,3,4,5,6,7]
+        activities_list = []
+        for i in activities_indexes:
+            activities_list.append(self.get_readings_by_activity(filename, tablename, i, features))
+        return activities_list
