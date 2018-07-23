@@ -5,6 +5,8 @@ import os.path
 from os.path import isfile, join
 from classes.commons.utils import print_debug
 import random
+import sqlite3
+from classes.commons.utils import print_debug, get_data_sql_query
 import sys
 
 
@@ -75,3 +77,24 @@ class Converter(object):
         self.traning_list = training_list
         self.test_list = test_list
 
+    def get_readings_by_activity(self, filename,tablename, activity, features):
+        dataset = sqlite3.connect(filename)
+        query = "select {} from {} where activity = {} order by time".format(features, tablename, activity)
+        print(query)
+        return get_data_sql_query(query, dataset)
+
+    #Return all readings
+    def get_all_readings(self, filename, tablename, features):
+        dataset = sqlite3.connect(filename)
+        return get_data_sql_query("select {} from {}".format(features, tablename), dataset)
+
+    #Do: function that return one list with activities
+    def load_list_of_activities(self, filename, tablename, features, separated=True):
+        if separated:
+            activities_indexes =[1,2,3,4,5,6,7]
+            activities_list = []
+            for i in activities_indexes:
+                activities_list.append(self.get_readings_by_activity(filename, tablename, i, features))
+            return activities_list
+        else:
+            return self.get_all_readings(filename, tablename, features)
