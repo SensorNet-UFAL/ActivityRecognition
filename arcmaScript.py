@@ -11,7 +11,7 @@ def create_file_db():
 
 def classification():
     #loading training activitie list by window
-    load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, activity", "activity")
+    load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, z, activity", "activity")
 
     #loading load
 
@@ -20,6 +20,7 @@ def classification():
 #dtw_mean = get_dtw_mean(activity_windows, sample)
 #print("Mean1 = {}".format(dtw_mean))
 
+#create_file_db()
 classification()
 
 

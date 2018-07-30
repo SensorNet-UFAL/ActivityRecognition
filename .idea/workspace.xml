@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="8896a912-d4ac-47c0-9e88-41264992fe7c" name="Function to split the dataset in training and test finished. Dataset file created." comment="Function to split the dataset in training and test finished. Dataset file created." />
-    <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="">
+    <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="Implements the function to load dataset of training and test, using windowing and unique label.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/arcmaScript.py" />
       <change beforePath="$PROJECT_DIR$/classes/commons/classification_functions.py" afterPath="$PROJECT_DIR$/classes/commons/classification_functions.py" />
       <change beforePath="$PROJECT_DIR$/classes/commons/dataset_functions.py" afterPath="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
       <change beforePath="$PROJECT_DIR$/classes/converters/arcma.py" afterPath="$PROJECT_DIR$/classes/converters/arcma.py" />
-      <change beforePath="$PROJECT_DIR$/classes/converters/converter.py" afterPath="$PROJECT_DIR$/classes/converters/converter.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="arcma.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="295">
+              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,7 +43,7 @@
       <file leaf-file-name="converter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="2241">
               <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
               <folding>
                 <element signature="e#24#46#0" expanded="true" />
@@ -44,8 +55,8 @@
       <file leaf-file-name="arcmaScript.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arcmaScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -53,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="131">
+              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="24" />
               <folding>
                 <element signature="e#10#23#0" expanded="true" />
               </folding>
@@ -65,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataset_functions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/indexing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="1625" column="0" lean-forward="false" selection-start-line="1625" selection-start-column="0" selection-end-line="1625" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataset_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/commons/dataset_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="945">
+              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -112,17 +133,17 @@
         <option value="$PROJECT_DIR$/classes/converters/umaAdl.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/classes/commons/utils.py" />
-        <option value="$PROJECT_DIR$/classes/converters/arcma.py" />
         <option value="$PROJECT_DIR$/classes/converters/converter.py" />
+        <option value="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
+        <option value="$PROJECT_DIR$/classes/converters/arcma.py" />
         <option value="$PROJECT_DIR$/arcmaScript.py" />
         <option value="$PROJECT_DIR$/classes/commons/classification_functions.py" />
-        <option value="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1212" />
-    <option name="y" value="-20" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -142,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,6 +186,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,20 +334,27 @@
       <option name="project" value="LOCAL" />
       <updated>1532124498761</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implements the function to load dataset of training and test, using windowing and unique label.">
+      <created>1532376694875</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532376694875</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23024236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23024236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586955" sideWeight="0.087987356" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586955" sideWeight="0.13962065" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34021738" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586955" sideWeight="0.91201264" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586955" sideWeight="0.86037934" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49315068" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.46575344" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -392,7 +420,8 @@
     <MESSAGE value="Iniciando a função para converter a base csv para sql." />
     <MESSAGE value="SQL conversion completed. The next step is slice the dataset." />
     <MESSAGE value="Function to split the dataset in training and test finished. Dataset file created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Function to split the dataset in training and test finished. Dataset file created." />
+    <MESSAGE value="Implements the function to load dataset of training and test, using windowing and unique label." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements the function to load dataset of training and test, using windowing and unique label." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,21 +430,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -430,9 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -464,7 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -479,9 +495,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,9 +541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -545,7 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="81" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,9 +587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -604,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,9 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,9 +672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="63" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="88" column="63" lean-forward="false" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,17 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="53" column="176" lean-forward="false" selection-start-line="53" selection-start-column="176" selection-end-line="53" selection-end-column="176" />
-          <folding>
-            <element signature="e#189#242#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,17 +733,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="2241">
           <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
           <folding>
             <element signature="e#24#46#0" expanded="true" />
@@ -761,32 +743,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/arcmaScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="351">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding>
-            <element signature="e#10#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="1625" column="0" lean-forward="false" selection-start-line="1625" selection-start-column="0" selection-end-line="1625" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/dataset_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="945">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="24" />
+          <folding>
+            <element signature="e#10#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

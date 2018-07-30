@@ -13,7 +13,7 @@ class ARCMAConverter(Converter):
         time = 0
         for index_csv, csv_file in enumerate(self.csv_files):
             for index_row, row in enumerate(csv_file):
-                self.readings.append({"time": time, "x": row[1], "y": row[2], "z": row[3], "activity": row[4]})
+                self.readings.append({"time": time, "x": int(row[1]), "y": int(row[2]), "z": int(row[3]), "activity": int(row[4])})
                 time = time + 1
 
         print_debug(self.readings[0])

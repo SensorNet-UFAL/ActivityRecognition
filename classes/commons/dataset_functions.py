@@ -24,8 +24,7 @@ def unique_label(dataframe, label):
     l = list(dataframe.loc[:, label])
     set_list = set(l)
     if len(set_list) > 1:
-        print_debug("Find more that one label in the window.")
-        #print_debug(l)
+        #print_debug("Find more that one label in the window.")
         item_count = 0
         u_label = None
         for i in set_list:
