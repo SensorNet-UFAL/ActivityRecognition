@@ -167,6 +167,8 @@ def calculating_features(dataframe_list):
 
     # CORRELATION #
     x_y = []
+    x_z = []
+    y_z = []
 
     for d in dataframe_list:
         x = d.loc[:, "x"]
@@ -237,6 +239,8 @@ def calculating_features(dataframe_list):
 
         # CORRELATION #
         x_y.append(round(get_correlation(x, y), 3))
+        x_z.append(round(get_correlation(x, z), 3))
+        y_z.append(round(get_correlation(y, z), 3))
 
         # GET LABEL #
         label = d["activity"].iloc[0]
@@ -246,7 +250,8 @@ def calculating_features(dataframe_list):
     #Initializing features array
     features = create_array_features([x_integration, y_integration, z_integration, x_rms, y_rms, z_rms,
                                       x_minmax, y_minmax, z_minmax, x_mean, y_mean, z_mean,
-                                      x_std, y_std, z_std, x_kurtosis, y_kurtosis, z_kurtosis, x_y])
+                                      x_std, y_std, z_std, x_kurtosis, y_kurtosis, z_kurtosis,
+                                      x_y, x_z, y_z])
     print("Features Shape: {}".format(features.shape))
 
     #Initializing labels array

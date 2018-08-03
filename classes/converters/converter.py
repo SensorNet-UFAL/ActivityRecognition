@@ -3,7 +3,6 @@ from os import listdir
 import csv
 import os.path
 from os.path import isfile, join
-from classes.commons.utils import print_debug
 import random
 import sqlite3
 from classes.commons.utils import print_debug, get_data_sql_query

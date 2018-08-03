@@ -18,6 +18,7 @@ from scipy.stats import kurtosis, skew
 from classes.commons.struct import Struct
 import plotly.plotly as py
 import plotly.graph_objs as go
+#from classes.converters.umaAdl import UmaAdlConverter
 
 #--IMPORTAÇÃO DE BIBLIOTECAS DE MACHINE LEARNING--#
 from sklearn.model_selection import cross_val_score #Para realizar o Cross Validation
@@ -325,7 +326,7 @@ def verify_accuracy_cross_validation(data, classifier, features_keys, label_key,
     print("Score {} = {}, Tempo = {}".format(classifier.__class__.__name__, score, timer))
 
 #Test machinelearning algorithms with all dataset
-def verify_accuracy_cross_validation_all_classify(con_sql, sqlite_dataset_name, selected_columns, person_len, features_keys, label_key,n_fold):
+'''def verify_accuracy_cross_validation_all_classify(con_sql, sqlite_dataset_name, selected_columns, person_len, features_keys, label_key,n_fold):
     results = []
     for person in range(1,person_len+1):
         file_print("==========================================PERSON {}======================================".format(person), LOG_FILE, True)
@@ -360,7 +361,7 @@ def verify_accuracy_cross_validation_all_classify(con_sql, sqlite_dataset_name, 
     df_results = pd.DataFrame(results)
     df_results.to_sql("output", dataset,if_exists='replace', index=False)
     file_print("================Finish verify accuracy=====================", LOG_FILE, True)
-
+'''
 def plot_accuracy_by_position(con_sql, classifier, sqlite_dataset_name, selected_columns, person):
     colors = {"ACCELEROMETER":"b", "GYROSCOPE":"g", "MAGNETOMETER":"r"}
     #translate_sensor = {"ACCELEROMETER": "Acelerômetro", "GYROSCOPE": "Giroscópio", "MAGNETOMETER": "Magnetômetro"}
@@ -400,6 +401,13 @@ def verify_confusion_matrix(classifier, data, features_keys, label_key, title):
     plot_confusion_matrix(cnf_matrix, class_names, True, title=title)
     plt.savefig("confusion_matrix_extra_trees.png")
 
+def verify_confusion_matrix_simple(labels_test, pred, title):
+    cnf_matrix = confusion_matrix(labels_test, pred, labels=np.unique(labels_test))
+    np.set_printoptions(precision=2)
+    class_names = np.unique(labels_test)
+    plt.figure()
+    plot_confusion_matrix(cnf_matrix, class_names, True, title=title)
+    plt.show()
 def connect_sql(filename):
     sqlite3.connect(filename)
 
