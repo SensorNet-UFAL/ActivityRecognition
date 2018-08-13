@@ -14,6 +14,7 @@ from scipy.stats import skew
 from scipy.stats.stats import pearsonr
 import matplotlib.pyplot as plt
 from classes.converters.converter import Converter
+from scipy.signal import argrelextrema
 
 
 # dataset = set with all samples of only one activite
@@ -92,7 +93,6 @@ def create_array_features(features_data_list):
     for index, features_data in enumerate(features_data_list):
         features[:, index] = features_data
     return features
-
 
 def get_rms(dataset):
     x_2 = np.power(dataset, 2)

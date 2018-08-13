@@ -65,8 +65,8 @@ def get_confusion_matrix():
 #print("Mean1 = {}".format(dtw_mean))
 
 #create_file_db()
-#classification()
-get_confusion_matrix()
+classification()
+#get_confusion_matrix()
 
 
 

@@ -6,8 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/arcmaScript.py" />
       <change beforePath="$PROJECT_DIR$/classes/commons/classification_functions.py" afterPath="$PROJECT_DIR$/classes/commons/classification_functions.py" />
-      <change beforePath="$PROJECT_DIR$/classes/commons/utils.py" afterPath="$PROJECT_DIR$/classes/commons/utils.py" />
-      <change beforePath="$PROJECT_DIR$/classes/converters/converter.py" afterPath="$PROJECT_DIR$/classes/converters/converter.py" />
+      <change beforePath="$PROJECT_DIR$/testes.py" afterPath="$PROJECT_DIR$/testes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="24" />
+            <state relative-caret-position="1377">
+              <caret line="70" column="24" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="24" />
               <folding>
                 <element signature="e#189#242#0" expanded="true" />
               </folding>
@@ -55,7 +54,7 @@
       <file leaf-file-name="converter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="189">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -65,7 +64,7 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="10854">
               <caret line="403" column="34" lean-forward="false" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="34" />
               <folding />
             </state>
@@ -75,8 +74,8 @@
       <file leaf-file-name="arcmaScript.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arcmaScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="59" column="92" lean-forward="true" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
+            <state relative-caret-position="1566">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -87,8 +86,8 @@
       <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="252" column="38" lean-forward="false" selection-start-line="252" selection-start-column="38" selection-end-line="252" selection-end-column="38" />
+            <state relative-caret-position="398">
+              <caret line="252" column="69" lean-forward="false" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="69" />
               <folding>
                 <element signature="e#10#23#0" expanded="true" />
               </folding>
@@ -99,8 +98,8 @@
       <file leaf-file-name="testes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -156,6 +155,7 @@
       <find>verify_confusion_matrix</find>
       <find>from classes.converters.converter import Converter</find>
       <find>UmaAdlConverter</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,17 +169,17 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
         <option value="$PROJECT_DIR$/classes/converters/arcma.py" />
-        <option value="$PROJECT_DIR$/testes.py" />
         <option value="$PROJECT_DIR$/classes/converters/converter.py" />
         <option value="$PROJECT_DIR$/classes/commons/utils.py" />
+        <option value="$PROJECT_DIR$/testes.py" />
         <option value="$PROJECT_DIR$/arcmaScript.py" />
         <option value="$PROJECT_DIR$/classes/commons/classification_functions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1902" />
-    <option name="y" value="-16" />
+    <option name="x" value="-1785" />
+    <option name="y" value="-14" />
     <option name="width" value="1934" />
     <option name="height" value="1047" />
   </component>
@@ -199,8 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +221,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533238478410</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding function to plot confusion matrix.">
+      <created>1533327073388</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1533327073388</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -419,12 +426,12 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23024236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586955" sideWeight="0.15911485" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33913043" sideWeight="0.17228661" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34021738" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586955" sideWeight="0.84088516" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33913043" sideWeight="0.8277134" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39673913" sideWeight="0.45310855" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39673913" sideWeight="0.7249737" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -493,7 +500,8 @@
     <MESSAGE value="Implements the function to load dataset of training and test, using windowing and unique label." />
     <MESSAGE value="Implementation the function to creating the features." />
     <MESSAGE value="Adding function to classify and test activities." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding function to classify and test activities." />
+    <MESSAGE value="Adding function to plot confusion matrix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding function to plot confusion matrix." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -800,18 +808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="24" />
+        <state relative-caret-position="1377">
+          <caret line="70" column="24" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="24" />
           <folding>
             <element signature="e#189#242#0" expanded="true" />
           </folding>
@@ -826,14 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -844,18 +836,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="10854">
           <caret line="403" column="34" lean-forward="false" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arcmaScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="59" column="92" lean-forward="true" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
+        <state relative-caret-position="1566">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -864,8 +872,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="252" column="38" lean-forward="false" selection-start-line="252" selection-start-column="38" selection-end-line="252" selection-end-column="38" />
+        <state relative-caret-position="398">
+          <caret line="252" column="69" lean-forward="false" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="69" />
           <folding>
             <element signature="e#10#23#0" expanded="true" />
           </folding>
