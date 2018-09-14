@@ -4,9 +4,6 @@
     <list id="8896a912-d4ac-47c0-9e88-41264992fe7c" name="Function to split the dataset in training and test finished. Dataset file created." comment="Function to split the dataset in training and test finished. Dataset file created." />
     <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/arcmaScript.py" />
-      <change beforePath="$PROJECT_DIR$/classes/commons/classification_functions.py" afterPath="$PROJECT_DIR$/classes/commons/classification_functions.py" />
-      <change beforePath="$PROJECT_DIR$/testes.py" afterPath="$PROJECT_DIR$/testes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,8 +83,8 @@
       <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="252" column="69" lean-forward="false" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="69" />
+            <state relative-caret-position="74">
+              <caret line="240" column="51" lean-forward="true" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
               <folding>
                 <element signature="e#10#23#0" expanded="true" />
               </folding>
@@ -199,6 +196,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,18 +210,10 @@
               <item name="ActivityRecognition" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ActivityRecognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ActivityRecognition" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="converters" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,13 +409,20 @@
       <option name="project" value="LOCAL" />
       <updated>1533327073388</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Sync directory">
+      <created>1534187481489</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534187481489</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23024236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23024236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33913043" sideWeight="0.17228661" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34021738" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
@@ -501,7 +499,8 @@
     <MESSAGE value="Implementation the function to creating the features." />
     <MESSAGE value="Adding function to classify and test activities." />
     <MESSAGE value="Adding function to plot confusion matrix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding function to plot confusion matrix." />
+    <MESSAGE value="Sync directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sync directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="252" column="69" lean-forward="false" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="69" />
+        <state relative-caret-position="74">
+          <caret line="240" column="51" lean-forward="true" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
           <folding>
             <element signature="e#10#23#0" expanded="true" />
           </folding>
