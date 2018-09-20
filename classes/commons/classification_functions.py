@@ -3,8 +3,9 @@ import random
 from fastdtw import fastdtw
 from scipy.spatial.distance import euclidean
 from classes.commons.dataset_functions import slice_by_window
-from classes.commons.utils import print_debug
+from classes.commons.utils import print_debug, get_data_sql_query
 import numpy as np
+import pandas as pd
 import math
 import time
 from python_speech_features import mfcc
@@ -84,12 +85,15 @@ def normalization(dataset):
     mx = max(dataset)
     mn = min(dataset)
     for i in dataset:
+        if(mx - mn == 0):
+            return dataset
         dataset_n.append(round(((i-mn)/(mx-mn)), 3))
     return dataset_n
 
 
 def create_array_features(features_data_list):
     features = np.zeros(shape=(len(features_data_list[0]), len(features_data_list)))
+    features = features.astype('float32')
     for index, features_data in enumerate(features_data_list):
         features[:, index] = features_data
     return features
@@ -124,9 +128,12 @@ def get_skew(dataset):
 
 
 def get_correlation(var1, var2):
-    return pearsonr(var1, var2)[0]
+    c = pearsonr(var1, var2)[0]
+    if np.isnan(c):
+        c = 0.0
+    return c
 
-def calculating_features(dataframe_list):
+def calculating_features(dataframe_list, label_name = "activity"):
     label = "activity"
     label_list = []
 
@@ -174,6 +181,11 @@ def calculating_features(dataframe_list):
         x = d.loc[:, "x"]
         y = d.loc[:, "y"]
         z = d.loc[:, "z"]
+
+        #convert itens from pandas series to floats
+        x = x.astype('float32')
+        y = y.astype('float32')
+        z = z.astype('float32')
         # INTEGRATION #
         ax = round(get_integration(normalization(x)), 3)
         ay = round(get_integration(normalization(y)), 3)
@@ -243,7 +255,7 @@ def calculating_features(dataframe_list):
         y_z.append(round(get_correlation(y, z), 3))
 
         # GET LABEL #
-        label = d["activity"].iloc[0]
+        label = d[label_name].iloc[0]
         label_list.append(label) #Get label for d
 
 
@@ -253,7 +265,6 @@ def calculating_features(dataframe_list):
                                       x_std, y_std, z_std, x_kurtosis, y_kurtosis, z_kurtosis,
                                       x_y, x_z, y_z])
     print("Features Shape: {}".format(features.shape))
-
     #Initializing labels array
     labels = np.array(label_list)
     #labels = np.reshape(labels, (labels.shape[0],n1
@@ -261,8 +272,20 @@ def calculating_features(dataframe_list):
     return features, labels
 
 
-def load_training_data_with_window(dataset, filename, tablename, features, label,window_len=50):
-    list_raw_data = dataset.load_list_of_activities(filename, tablename, features, False)
+def load_training_data_with_window(dataset, filename, tablename, features, activities_indexes, label,window_len=50, activity_column_name = "activity"):
+    list_raw_data = dataset.load_list_of_activities(filename, tablename, features, activities_indexes, False, activity_column_name)
+    list_window = slice_by_window(list_raw_data, label, window_len)
+    training, test = slice_to_training_test(list_window)
+    return training, test
+
+def load_training_data_with_window_from_person(dataset, filename, tablename, features, label,window_len, person_tag, person_column):
+    list_raw_data = dataset.get_all_readings_from_person(filename, tablename, features, person_tag, person_column)
+    list_window = slice_by_window(list_raw_data, label, window_len)
+    training, test = slice_to_training_test(list_window)
+    return training, test
+
+def load_training_data_with_window_from_sql(dataset, filename, sql, label, window_len):
+    list_raw_data = dataset.get_readings_by_sql(filename, sql)
     list_window = slice_by_window(list_raw_data, label, window_len)
     training, test = slice_to_training_test(list_window)
     return training, test
