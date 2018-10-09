@@ -76,9 +76,9 @@ class Converter(object):
         self.traning_list = training_list
         self.test_list = test_list
 
-    def get_readings_by_activity(self, filename,tablename, activity, features):
+    def get_readings_by_activity(self, filename,tablename, activity, features, activity_column_name="activity"):
         dataset = sqlite3.connect(filename)
-        query = "select {} from {} where activity = {} order by time".format(features, tablename, activity)
+        query = "select {} from {} where {} = {} order by time".format(features, tablename, activity_column_name, activity)
         print(query)
         return get_data_sql_query(query, dataset)
 
@@ -87,13 +87,21 @@ class Converter(object):
         dataset = sqlite3.connect(filename)
         return get_data_sql_query("select {} from {}".format(features, tablename), dataset)
 
+    def get_readings_by_sql(self, filename, sql):
+        dataset = sqlite3.connect(filename)
+        return get_data_sql_query(sql, dataset)
+
+    def get_all_readings_from_person(self, filename, tablename, features, person_tag, person_column):
+        dataset = sqlite3.connect(filename)
+        return get_data_sql_query("select {} from {} where {} = {}".format(features, tablename, person_column, person_tag), dataset)
+
     #Do: function that return one list with activities
-    def load_list_of_activities(self, filename, tablename, features, separated=True):
+    def load_list_of_activities(self, filename, tablename, features, activities_indexes, separated=True, activity_column_name = "activity"):
         if separated:
-            activities_indexes =[1,2,3,4,5,6,7]
+            #activities_indexes =[1,2,3,4,5,6,7]
             activities_list = []
             for i in activities_indexes:
-                activities_list.append(self.get_readings_by_activity(filename, tablename, i, features))
+                activities_list.append(self.get_readings_by_activity(filename, tablename, i, features, activity_column_name))
             return activities_list
         else:
             return self.get_all_readings(filename, tablename, features)

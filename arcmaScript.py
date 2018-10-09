@@ -18,7 +18,7 @@ def create_file_db():
 
 def classification():
     #loading training activitie list by window
-    training, test = load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, z, activity", "activity", window_len=100)
+    training, test = load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, z, activity", [1,2,3,4,5,6,7],"activity", window_len=100)
 
     #Calculate Features
     training_features, training_labels = calculating_features(training)
@@ -42,7 +42,7 @@ def classification():
 
 def get_confusion_matrix():
 
-    training, test = load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, z, activity", "activity", window_len=100)
+    training, test = load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, z, activity",[1,2,3,4,5,6,7], "activity", window_len=100)
     # Calculate Features
     training_features, training_labels = calculating_features(training)
     test_features, test_labels = calculating_features(test)
