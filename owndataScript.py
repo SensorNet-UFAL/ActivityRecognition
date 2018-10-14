@@ -51,5 +51,5 @@ def detect_outliers():
     print((y_pred_train.size - np.count_nonzero(y_pred_train == -1))/y_pred_train.size)
 
 
-#classification()
-detect_outliers()
+classification()
+#detect_outliers()
