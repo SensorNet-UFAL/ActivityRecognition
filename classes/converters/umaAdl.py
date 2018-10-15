@@ -56,12 +56,12 @@ class UmaAdlConverter(Converter):
         print(self.readings[0])
 
 
-    def convert_csv_to_sql(filename, dataset_name):
-        uma_dataset_object = UmaAdlConverter()
+    def convert_csv_to_sql(self,filename, dataset_name):
+        #uma_dataset_object = UmaAdlConverter()
         print("Umafall object load.")
         dataset = sqlite3.connect(filename)
         print("Starting convert object to sqlite...")
-        uma_dataset_object.dataset_dataframe.to_sql(dataset_name, dataset, if_exists='replace', index=False)
+        self.dataset_dataframe.to_sql(dataset_name, dataset, if_exists='replace', index=False)
         print("Sqlite convert finished.")
         dataset.close()
     def get_name_person(self, row):
@@ -84,8 +84,8 @@ class UmaAdlConverter(Converter):
         data_frame = pd.DataFrame(self.readings)
         return data_frame
 
-    def __init__(self):
-        path = '..\\..\\..\\Projeto_Artigo\\Datasets\\UMA_ADL_FALL_Dataset'
+
+    def load_from_csv(self,path):
         Converter.__init__(self, path)
         self.load_data()
         self.dataset_dataframe = self.convert_dataframe()
