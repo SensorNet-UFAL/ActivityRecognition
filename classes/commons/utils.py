@@ -197,8 +197,8 @@ def plot_confusion_matrix(cm, classes,
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('True Label')
-    plt.xlabel('Predicted Label')
+    plt.ylabel('Atividade Verdadeira')
+    plt.xlabel('Atividade Predita')
 
 
 def slice_features(features, length):

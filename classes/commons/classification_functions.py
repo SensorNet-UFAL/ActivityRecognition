@@ -133,7 +133,7 @@ def get_correlation(var1, var2):
         c = 0.0
     return c
 
-def calculating_features(dataframe_list, label_name = "activity"):
+def calculating_features(dataframe_list, label_name = "activity", x_label="x", y_label="y", z_label="z"):
     label = "activity"
     label_list = []
 
@@ -178,9 +178,9 @@ def calculating_features(dataframe_list, label_name = "activity"):
     y_z = []
 
     for d in dataframe_list:
-        x = d.loc[:, "x"]
-        y = d.loc[:, "y"]
-        z = d.loc[:, "z"]
+        x = d.loc[:, x_label]
+        y = d.loc[:, y_label]
+        z = d.loc[:, z_label]
 
         #convert itens from pandas series to floats
         x = x.astype('float32')
