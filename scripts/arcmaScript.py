@@ -18,7 +18,7 @@ most_accurate_person = {"clf": "", "id": 0, "accuracy": 0}
 def create_file_db():
     arcma.load_data()
     #arcma.slice_to_training_test(0.8, 100)
-    arcma.save_to_sql("arcma.db", "arcma")
+    arcma.save_to_sql("..\\arcma.db", "arcma")
 
 
 def put_clf_init_values(clf_store, clf, person_index, training_features, training_labels, test_features, test_labels):
@@ -85,7 +85,7 @@ def classification():
                  "training_features": None, "training_labels": None, "test_features": None, "test_labels": None}
 
     for person_index in range(1,16):
-        training, test = load_training_data_with_window_from_person(arcma, "arcma.db", "arcma", "x, y, z, activity",
+        training, test = load_training_data_with_window_from_person(arcma, "..\\arcma.db", "arcma", "x, y, z, activity",
                                                                     "activity", 100, person_index, "person")
         training_features, training_labels = calculating_features(training)
         test_features, test_labels = calculating_features(test)
@@ -191,7 +191,7 @@ def classification():
 def get_confusion_matrix():
 
     #training, test = load_training_data_with_window(arcma, "arcma.db", "arcma", "x, y, z, activity",[1,2,3,4,5,6,7], "activity", window_len=100)
-    training, test = load_training_data_with_window_from_person(arcma, "arcma.db", "arcma", "x, y, z, activity",
+    training, test = load_training_data_with_window_from_person(arcma, "..\\arcma.db", "arcma", "x, y, z, activity",
                                                                 "activity", 100, 13, "person")
     # Calculate Features
     training_features, training_labels = calculating_features(training)
@@ -209,8 +209,8 @@ def get_confusion_matrix():
 #print("Mean1 = {}".format(dtw_mean))
 
 #create_file_db()
-#classification()
-get_confusion_matrix()
+classification()
+#get_confusion_matrix()
 
 
 

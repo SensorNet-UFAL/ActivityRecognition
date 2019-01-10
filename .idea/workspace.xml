@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="8896a912-d4ac-47c0-9e88-41264992fe7c" name="Function to split the dataset in training and test finished. Dataset file created." comment="Function to split the dataset in training and test finished. Dataset file created." />
-    <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="Adding new class to UMAFall.">
+    <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/outlierDetection.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/resultados outlier_arcma" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/UMAFallScript.py" afterPath="$PROJECT_DIR$/UMAFallScript.py" />
-      <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/arcmaScript.py" />
-      <change beforePath="$PROJECT_DIR$/classes/commons/classification_functions.py" afterPath="$PROJECT_DIR$/classes/commons/classification_functions.py" />
-      <change beforePath="$PROJECT_DIR$/classes/commons/utils.py" afterPath="$PROJECT_DIR$/classes/commons/utils.py" />
+      <change beforePath="$PROJECT_DIR$/UMAFallScript.py" afterPath="$PROJECT_DIR$/scripts/UMAFallScript.py" />
+      <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/scripts/arcmaScript.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +21,8 @@
       <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4488">
-              <caret line="280" column="4" lean-forward="false" selection-start-line="280" selection-start-column="4" selection-end-line="280" selection-end-column="4" />
+            <state relative-caret-position="209">
+              <caret line="264" column="55" lean-forward="false" selection-start-line="264" selection-start-column="55" selection-end-line="264" selection-end-column="55" />
               <folding>
                 <element signature="e#10#23#0" expanded="true" />
               </folding>
@@ -30,68 +30,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arcma.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
+      <file leaf-file-name="outlierDetection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/outlierDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="umaAdl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3417">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="converter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="89" column="49" lean-forward="false" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
-              <folding>
-                <element signature="e#24#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UMAFallScript.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UMAFallScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="105" column="38" lean-forward="false" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arcmaScript.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arcmaScript.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="87" column="57" lean-forward="false" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+            <state relative-caret-position="8">
+              <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultados outlier_arcma" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/resultados outlier_arcma">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,6 +84,8 @@
       <find>get_readings_by_sql</find>
       <find>naive</find>
       <find>convert_umafall_from_csv_to_sqlite</find>
+      <find>umafall.db</find>
+      <find>arcma.db</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,13 +108,18 @@
         <option value="$PROJECT_DIR$/classes/commons/utils.py" />
         <option value="$PROJECT_DIR$/arcmaScript.py" />
         <option value="$PROJECT_DIR$/UMAFallScript.py" />
+        <option value="$PROJECT_DIR$/scripts/UMAFallScript.py" />
+        <option value="$PROJECT_DIR$/scripts/arcmaScript.py" />
+        <option value="$PROJECT_DIR$/scripts/outlierDetection.py" />
+        <option value="$PROJECT_DIR$/scripts/resultados outlier_arcma" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1378" />
-    <option name="height" value="735" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -186,19 +149,7 @@
             <path>
               <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="converters" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,6 +160,12 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wylken.machado.INTRA\Documents\ActivityRecognitionFinal\scripts" />
+      <recent name="C:\Users\wylken.machado.INTRA\Documents\ActivityRecognitionFinal" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.arcmaScript">
+  <component name="RunManager" selected="Python.outlierDetection">
     <configuration name="UMAFallScript" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,7 +192,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Deeplearning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UMAFallScript.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\wylken.machado.INTRA\Documents\ActivityRecognitionFinal\scripts\UMAFallScript.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="arcmaScript (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Deeplearning" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/arcmaScript.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,25 +228,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Deeplearning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/arcmaScript.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\wylken.machado.INTRA\Documents\ActivityRecognitionFinal\scripts\arcmaScript.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="outlierDetection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Deeplearning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/outlierDetection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -295,24 +270,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="testes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Deeplearning" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="Deeplearning" type="Python.Ipnb" factoryName="Jupyter Notebook">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -331,19 +288,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Jupyter Notebook.Deeplearning" />
-      <item index="1" class="java.lang.String" itemvalue="Python.main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.arcmaScript" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testes" />
-      <item index="4" class="java.lang.String" itemvalue="Python.owndataScript" />
-      <item index="5" class="java.lang.String" itemvalue="Python.UMAFallScript" />
+      <item index="1" class="java.lang.String" itemvalue="Python.arcmaScript" />
+      <item index="2" class="java.lang.String" itemvalue="Python.owndataScript" />
+      <item index="3" class="java.lang.String" itemvalue="Python.UMAFallScript" />
+      <item index="4" class="java.lang.String" itemvalue="Python.arcmaScript (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.outlierDetection" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.arcmaScript" />
-        <item index="1" class="java.lang.String" itemvalue="Python.UMAFallScript" />
-        <item index="2" class="java.lang.String" itemvalue="Python.owndataScript" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testes" />
-        <item index="4" class="java.lang.String" itemvalue="Python.main" />
+        <item index="0" class="java.lang.String" itemvalue="Python.outlierDetection" />
+        <item index="1" class="java.lang.String" itemvalue="Python.arcmaScript (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.UMAFallScript" />
+        <item index="3" class="java.lang.String" itemvalue="Python.arcmaScript" />
+        <item index="4" class="java.lang.String" itemvalue="Python.owndataScript" />
       </list>
     </recent_temporary>
   </component>
@@ -474,20 +431,27 @@
       <option name="project" value="LOCAL" />
       <updated>1539566820547</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Sync directory.">
+      <created>1545692189151</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545692189151</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26343283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19642857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3618421" sideWeight="0.20820895" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15859766" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15859766" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.360601" sideWeight="0.791791" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3536184" sideWeight="0.791791" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41118422" sideWeight="0.75149256" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40953946" sideWeight="0.75149256" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5871711" sideWeight="0.88616073" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -562,7 +526,8 @@
     <MESSAGE value="Add owndata file." />
     <MESSAGE value="Adding the function to check the accuracy of each person." />
     <MESSAGE value="Adding new class to UMAFall." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new class to UMAFall." />
+    <MESSAGE value="Sync directory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sync directory." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -588,30 +553,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/commons/struct.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#24#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/commons/person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -638,7 +579,7 @@
         <state relative-caret-position="306">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
-            <element signature="e#24#46#0" expanded="true" />
+            <element signature="e#24#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -676,7 +617,7 @@
         <state relative-caret-position="306">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
-            <element signature="e#24#46#0" expanded="true" />
+            <element signature="e#24#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -714,7 +655,7 @@
         <state relative-caret-position="68">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
-            <element signature="e#24#46#0" expanded="true" />
+            <element signature="e#24#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,27 +824,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="310">
           <caret line="89" column="49" lean-forward="false" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
           <folding>
-            <element signature="e#24#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="280" column="4" lean-forward="false" selection-start-line="280" selection-start-column="4" selection-end-line="280" selection-end-column="4" />
-          <folding>
-            <element signature="e#10#23#0" expanded="true" />
+            <element signature="e#24#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3417">
+        <state relative-caret-position="310">
           <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding />
         </state>
@@ -914,7 +845,7 @@
         <state relative-caret-position="289">
           <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#24#34#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,20 +858,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arcmaScript.py">
+    <entry file="file://$PROJECT_DIR$/../../../wylken.machado/AppData/Local/Programs/Python/Python36/Lib/site-packages/scipy/stats/stats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="87" column="57" lean-forward="false" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+        <state relative-caret-position="377">
+          <caret line="5239" column="0" lean-forward="false" selection-start-line="5239" selection-start-column="0" selection-end-line="5239" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/arcmaScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="192" column="78" lean-forward="false" selection-start-line="192" selection-start-column="73" selection-end-line="192" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="264" column="55" lean-forward="false" selection-start-line="264" selection-start-column="55" selection-end-line="264" selection-end-column="55" />
+          <folding>
+            <element signature="e#10#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/UMAFallScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="186" column="85" lean-forward="true" selection-start-line="184" selection-start-column="4" selection-end-line="186" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/outlierDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UMAFallScript.py">
+    <entry file="file://$PROJECT_DIR$/scripts/resultados outlier_arcma">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="105" column="38" lean-forward="false" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+        <state relative-caret-position="357">
+          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding />
         </state>
       </provider>

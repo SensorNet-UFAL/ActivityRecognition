@@ -63,7 +63,7 @@ def print_time_to_fit(clf_store):
 def create_umafall_db():
     umafall = UmaAdlConverter('')
     umafall.load_from_csv("C:\\Users\\wylken.machado.INTRA\\ownCloud\\WYLKEN\\MESTRADO\\2016\\Dissertacao\\Implementacoes\\Projeto_Artigo\\Datasets\\UMA_ADL_FALL_Dataset")
-    umafall.convert_csv_to_sql("umafall.db", "umafall")
+    umafall.convert_csv_to_sql("..\\umafall.db", "umafall")
 
 def classification():
     umafall = UmaAdlConverter('')
@@ -95,7 +95,7 @@ def classification():
 
     for person_index in range(1, 18):
         print("==== Person {} ====".format(person_index))
-        training, test = load_training_data_with_window_from_sql(umafall, "umafall.db", "Select XAxis, YAxis, ZAxis, activity from umafall where SensorType=0 and SensorID=0 and person={}".format(person_index), "activity", 50)
+        training, test = load_training_data_with_window_from_sql(umafall, "..\\umafall.db", "Select XAxis, YAxis, ZAxis, activity from umafall where SensorType=0 and SensorID=0 and person={}".format(person_index), "activity", 50)
         training_features, training_labels = calculating_features(training, x_label="XAxis", y_label="YAxis", z_label="ZAxis")
         test_features, test_labels = calculating_features(test, x_label="XAxis", y_label="YAxis", z_label="ZAxis")
         if len(training_labels) > 10:
@@ -166,7 +166,7 @@ def classification():
 def get_confusion_matrix():
 
     umafall = UmaAdlConverter('')
-    training, test = load_training_data_with_window_from_sql(umafall, "umafall.db",
+    training, test = load_training_data_with_window_from_sql(umafall, "..\\umafall.db",
                                                              "Select XAxis, YAxis, ZAxis, activity from umafall where SensorType=0 and SensorID=0 and person={}".format(
                                                                  13), "activity", 50)
     # Calculate Features
@@ -179,14 +179,15 @@ def get_confusion_matrix():
     print("Accuracy Extra Trees: {}".format(accuracy_score(test_labels, pred)))
     verify_confusion_matrix_simple(test_labels, pred, "Matriz de Confusão - Extra-Trees.")
 
-def verify_accuracy_with_noise():
+def verify_filter_accuracy():
     umafall = UmaAdlConverter('')
-    training, test = load_training_data_with_window_from_sql(umafall, "umafall.db",
+    deleted_activity = 'Bending'
+    training, test = load_training_data_with_window_from_sql(umafall, "..\\umafall.db",
                                                              "Select XAxis, YAxis, ZAxis, activity from umafall where SensorType=0 and SensorID=0 and person={}".format(
                                                                  13), "activity", 50)
-    training_i, test_i = load_training_data_with_window_from_sql(umafall, "umafall.db",
+    training_i, test_i = load_training_data_with_window_from_sql(umafall, "..\\umafall.db",
                                                              "Select XAxis, YAxis, ZAxis, activity from umafall where SensorType=0 and SensorID=0 and person={} and activity != '{}'".format(
-                                                                 13,'Sitting'), "activity", 50)
+                                                                 13,deleted_activity), "activity", 50)
 
     training_features, training_labels = calculating_features(training, x_label="XAxis", y_label="YAxis",
                                                               z_label="ZAxis")
@@ -197,22 +198,43 @@ def verify_accuracy_with_noise():
                                                               z_label="ZAxis")
     test_features_i, test_labels_i = calculating_features(test_i, x_label="XAxis", y_label="YAxis", z_label="ZAxis")
 
-    extra_trees = ExtraTreesClassifier(max_depth=100, random_state=0)
-    extra_trees.fit(training_features_i, training_labels_i)
-    pred = extra_trees.predict(test_features_i)
-    pred_noise = extra_trees.predict(test_features)
-    print("Accuracy Extra Trees: {}".format(accuracy_score(test_labels_i, pred)))
-    print("Accuracy with Noise Extra Trees: {}".format(accuracy_score(test_labels, pred_noise)))
-    #verify_confusion_matrix_simple(test_labels, pred_noise, "Matriz de Confusão - Extra-Trees.")
 
     # CONFIG FILTER #
-    outliers_fraction = 0.05
-    rng = np.random.RandomState(42)
-    filter = svm.OneClassSVM(nu=0.95 * outliers_fraction + 0.05, kernel="rbf", gamma=0.11)
+    outliers_fraction = 0.15
+    filter = svm.OneClassSVM(nu=outliers_fraction, kernel="rbf", gamma=0.1)
 
+    # Fit and pretict test set
     filter.fit(training_features_i)
     pred_filter = filter.predict(test_features)
 
+    # pred to compare
+    pred_to_compare = np.zeros(pred_filter.shape[0])
+    for i, v in enumerate(pred_filter):
+        if v == deleted_activity:
+            pred_to_compare[i] = 1
+
+    test_to_compare = np.zeros(test_labels.shape[0])
+    for i, v in enumerate(test_labels):
+        if v == deleted_activity:
+            test_to_compare[i] = 1
+    print("=================Test_labels===================")
+    print(test_to_compare)
+    print("=================Pred_to_compare===================")
+    print(pred_filter)
+    print("=================Aux_accuracy===================")
+    aux_accuracy = np.zeros(test_labels.shape[0])
+    for i, v in enumerate(test_to_compare):
+        if v == pred_filter[i]:
+            aux_accuracy[i] = 1
+
+    print(aux_accuracy)
+
+
+
+
+
+
+    '''
     # == Random Filter ==#
     rand_filter = []
     for index in range(len(pred_filter)):
@@ -236,22 +258,21 @@ def verify_accuracy_with_noise():
             new_test_labels.append(test_labels[index])
     new_pred = extra_trees.predict(new_test_features)
     print("Accuracy After Random Filter - Extra Trees: {}".format(accuracy_score(new_test_labels, new_pred)))
-
-    '''print("-----------------------------------------------------")
+    print("-----------------------------------------------------")
     print(pred_filter)
     print("-----------------------------------------------------")
     print(test_labels)
     print(len(test_labels))
     print("-----------------------------------------------------")
     print(new_test_labels)
-    print(len(new_test_labels))'''
-
+    print(len(new_test_labels))
+    '''
 
 
 
 
 
 #create_umafall_db()
-classification()
+#classification()
 #get_confusion_matrix()
-#verify_accuracy_with_noise()
+verify_filter_accuracy()
