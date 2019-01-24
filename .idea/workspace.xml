@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list id="8896a912-d4ac-47c0-9e88-41264992fe7c" name="Function to split the dataset in training and test finished. Dataset file created." comment="Function to split the dataset in training and test finished. Dataset file created." />
     <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/outlierDetection.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/resultados outlier_arcma" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/UMAFallScript.py" afterPath="$PROJECT_DIR$/scripts/UMAFallScript.py" />
-      <change beforePath="$PROJECT_DIR$/arcmaScript.py" afterPath="$PROJECT_DIR$/scripts/arcmaScript.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/outlierDetection.py" afterPath="$PROJECT_DIR$/scripts/outlierDetection.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="264" column="55" lean-forward="false" selection-start-line="264" selection-start-column="55" selection-end-line="264" selection-end-column="55" />
+            <state relative-caret-position="117">
+              <caret line="135" column="103" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="103" />
               <folding>
                 <element signature="e#10#23#0" expanded="true" />
               </folding>
@@ -30,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="outlierDetection.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="outlierDetection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/outlierDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
+            <state relative-caret-position="633">
+              <caret line="182" column="92" lean-forward="false" selection-start-line="182" selection-start-column="92" selection-end-line="182" selection-end-column="92" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -42,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultados outlier_arcma" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/resultados outlier_arcma">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+            <state relative-caret-position="289">
+              <caret line="432" column="68" lean-forward="false" selection-start-line="432" selection-start-column="57" selection-end-line="432" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -86,6 +83,13 @@
       <find>convert_umafall_from_csv_to_sqlite</find>
       <find>umafall.db</find>
       <find>arcma.db</find>
+      <find>[10], [20]</find>
+      <find>[10], [19]</find>
+      <find>[10], [14]</find>
+      <find>[10], [13]</find>
+      <find>[10], [11]</find>
+      <find>Train Accuracy Mean</find>
+      <find>Outliers Accuracy Mean</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,15 +114,15 @@
         <option value="$PROJECT_DIR$/UMAFallScript.py" />
         <option value="$PROJECT_DIR$/scripts/UMAFallScript.py" />
         <option value="$PROJECT_DIR$/scripts/arcmaScript.py" />
-        <option value="$PROJECT_DIR$/scripts/outlierDetection.py" />
         <option value="$PROJECT_DIR$/scripts/resultados outlier_arcma" />
+        <option value="$PROJECT_DIR$/scripts/outlierDetection.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,14 +141,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActivityRecognitionFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="converters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ActivityRecognitionFinal" type="b2602c69:ProjectViewProjectNode" />
@@ -438,18 +459,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545692189151</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adding function to find the best set to predict the outliers.">
+      <created>1547152721930</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547152721930</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19642857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3618421" sideWeight="0.20820895" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15859766" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3536184" sideWeight="0.791791" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34046054" sideWeight="0.791791" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40953946" sideWeight="0.75149256" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -527,7 +555,9 @@
     <MESSAGE value="Adding the function to check the accuracy of each person." />
     <MESSAGE value="Adding new class to UMAFall." />
     <MESSAGE value="Sync directory." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sync directory." />
+    <MESSAGE value="Adding function to find the best set to predict the outliers." />
+    <MESSAGE value="Adding function to find the best set to predict the outliers with person." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding function to find the best set to predict the outliers with person." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,13 +744,6 @@
     <entry file="file://C:/../../../../../wylken.machado/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/externals/joblib/parallel.py" />
     <entry file="file://C:/../../../../../wylken.machado/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/model_selection/_validation.py" />
     <entry file="file://C:/../../../../../wylken.machado/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/linear_model/base.py" />
-    <entry file="file://$PROJECT_DIR$/classes/commons/struct.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/person.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -832,24 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="e#24#34#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/converters/arcma.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -862,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="5239" column="0" lean-forward="false" selection-start-line="5239" selection-start-column="0" selection-end-line="5239" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,45 +874,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="192" column="78" lean-forward="false" selection-start-line="192" selection-start-column="73" selection-end-line="192" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/resultados outlier_arcma">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/converters/umaAdl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/commons/struct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/UMAFallScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2924">
+          <caret line="186" column="85" lean-forward="true" selection-start-line="184" selection-start-column="4" selection-end-line="186" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/commons/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="432" column="68" lean-forward="false" selection-start-line="432" selection-start-column="57" selection-end-line="432" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="264" column="55" lean-forward="false" selection-start-line="264" selection-start-column="55" selection-end-line="264" selection-end-column="55" />
+        <state relative-caret-position="117">
+          <caret line="135" column="103" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="103" />
           <folding>
             <element signature="e#10#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/UMAFallScript.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="186" column="85" lean-forward="true" selection-start-line="184" selection-start-column="4" selection-end-line="186" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/outlierDetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
+        <state relative-caret-position="633">
+          <caret line="182" column="92" lean-forward="false" selection-start-line="182" selection-start-column="92" selection-end-line="182" selection-end-column="92" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/resultados outlier_arcma">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
