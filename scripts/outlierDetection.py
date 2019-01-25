@@ -5,17 +5,30 @@ from sklearn import svm
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
+import time
 
 arcma = ARCMAConverter("{}\\databases\\arcma".format(os.getcwd()))
 
 def load_data_to_outlier_test_arcma(activity_outlier, person_list = 1):
 
     #load data
+    start_sql = time.time()
     training, test = load_training_data_with_window_from_sql(arcma, "..\\arcma.db", "Select x, y, z, activity from arcma where activity <> {} and person={}".format(activity_outlier, person_list), "activity", 50)
+    stop_sql = time.time()
+    start_features = time.time()
     training_features, training_labels = calculating_features(training)
     test_features, test_labels = calculating_features(test)
+    stop_features = time.time()
     _, test_outliers = load_training_data_with_window_from_sql(arcma, "..\\arcma.db", "Select x, y, z, activity from arcma where activity = {} and person={}".format(activity_outlier, person_list), "activity", 50)
     outliers_test_features, _ = calculating_features(test_outliers)
+
+    #consultar subconjuntos no dataframe pandas => https://stackoverflow.com/questions/17071871/select-rows-from-a-dataframe-based-on-values-in-a-column-in-pandas
+
+    print("=====================")
+    print("Time to load SQL: {}s".format(stop_sql-start_sql))
+    print("=====================")
+    print("Time to load Features: {}s".format(stop_features - start_features))
+    print("=====================")
 
     return training_features, test_features, outliers_test_features
 
@@ -220,7 +233,8 @@ def plot_partial_set(test_features, test_labels):
 
 #find_the_best_set_depth_2()
 #find_the_best_set_depth_3()
-find_the_best_set_depth_3_activity_loop()
+#find_the_best_set_depth_3_activity_loop()
 #total_accuracy_for_set((10, 14,15))
+load_data_to_outlier_test_arcma(2)
 
 
