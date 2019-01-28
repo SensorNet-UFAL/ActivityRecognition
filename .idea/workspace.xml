@@ -4,6 +4,8 @@
     <list id="8896a912-d4ac-47c0-9e88-41264992fe7c" name="Function to split the dataset in training and test finished. Dataset file created." comment="Function to split the dataset in training and test finished. Dataset file created." />
     <list default="true" id="8ff1e20e-7f59-41e8-9da3-bd2fa04ce6aa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/classes/commons/classification_functions.py" afterPath="$PROJECT_DIR$/classes/commons/classification_functions.py" />
+      <change beforePath="$PROJECT_DIR$/classes/commons/dataset_functions.py" afterPath="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
       <change beforePath="$PROJECT_DIR$/scripts/outlierDetection.py" afterPath="$PROJECT_DIR$/scripts/outlierDetection.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +20,8 @@
       <file leaf-file-name="classification_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="135" column="103" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="103" />
+            <state relative-caret-position="-2856">
+              <caret line="93" column="4" lean-forward="false" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
               <folding>
                 <element signature="e#10#23#0" expanded="true" />
               </folding>
@@ -27,11 +29,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="dataset_functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/commons/dataset_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="outlierDetection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/outlierDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="182" column="92" lean-forward="false" selection-start-line="182" selection-start-column="92" selection-end-line="182" selection-end-column="92" />
+            <state relative-caret-position="66">
+              <caret line="161" column="37" lean-forward="false" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="37" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -100,7 +112,6 @@
       <list>
         <option value="$PROJECT_DIR$/visualizacao.ipynb" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
         <option value="$PROJECT_DIR$/testes.py" />
         <option value="$PROJECT_DIR$/classes/converters/owndata.py" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/validation.py" />
@@ -108,13 +119,14 @@
         <option value="$PROJECT_DIR$/owndataScript.py" />
         <option value="$PROJECT_DIR$/classes/converters/arcma.py" />
         <option value="$PROJECT_DIR$/classes/converters/umaAdl.py" />
-        <option value="$PROJECT_DIR$/classes/commons/classification_functions.py" />
         <option value="$PROJECT_DIR$/classes/commons/utils.py" />
         <option value="$PROJECT_DIR$/arcmaScript.py" />
         <option value="$PROJECT_DIR$/UMAFallScript.py" />
         <option value="$PROJECT_DIR$/scripts/UMAFallScript.py" />
         <option value="$PROJECT_DIR$/scripts/arcmaScript.py" />
         <option value="$PROJECT_DIR$/scripts/resultados outlier_arcma" />
+        <option value="$PROJECT_DIR$/classes/commons/dataset_functions.py" />
+        <option value="$PROJECT_DIR$/classes/commons/classification_functions.py" />
         <option value="$PROJECT_DIR$/scripts/outlierDetection.py" />
       </list>
     </option>
@@ -122,7 +134,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -466,22 +478,29 @@
       <option name="project" value="LOCAL" />
       <updated>1547152721930</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Adding function to find the best set to predict the outliers with person.">
+      <created>1548374227268</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1548374227268</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19642857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19701493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3618421" sideWeight="0.20820895" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15859766" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53453946" sideWeight="0.49525815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34046054" sideWeight="0.791791" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40953946" sideWeight="0.75149256" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5871711" sideWeight="0.88616073" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38157895" sideWeight="0.88616073" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -574,7 +593,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -828,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/commons/dataset_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/owndataScript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -917,10 +929,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/commons/dataset_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/commons/classification_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="135" column="103" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="103" />
+        <state relative-caret-position="-2856">
+          <caret line="93" column="4" lean-forward="false" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
           <folding>
             <element signature="e#10#23#0" expanded="true" />
           </folding>
@@ -929,8 +949,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/outlierDetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="182" column="92" lean-forward="false" selection-start-line="182" selection-start-column="92" selection-end-line="182" selection-end-column="92" />
+        <state relative-caret-position="66">
+          <caret line="161" column="37" lean-forward="false" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="37" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

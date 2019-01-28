@@ -10,7 +10,7 @@ def slice_by_window(dataframe, label, window_length):
     while(index < dataframe_len):
         try:
             l = dataframe.iloc[index:(index+window_length)]
-            l = unique_label(l, label)
+            #l = unique_label(l, label)
             result.append(l)
             index = index + window_length
         except Exception as e:
@@ -24,7 +24,7 @@ def unique_label(dataframe, label):
     l = list(dataframe.loc[:, label])
     set_list = set(l)
     if len(set_list) > 1:
-        #print_debug("Find more that one label in the window.")
+        print_debug("Find more that one label in the window.")
         item_count = 0
         u_label = None
         for i in set_list:
