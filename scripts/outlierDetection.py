@@ -14,7 +14,7 @@ def load_all_data_to_outlier_test_arcma():
     list_train_labels = []
     list_test_features = []
     list_test_labels = []
-    for p in range(1, 2):
+    for p in range(1, 16):
         training, test = load_training_data_with_window_from_sql(arcma, "..\\arcma.db", "Select x, y, z, activity, person from arcma where person={}".format(p), "activity", 50)
         training_features, training_labels = calculating_features(training)
         test_features, test_labels = calculating_features(test)
@@ -24,7 +24,7 @@ def load_all_data_to_outlier_test_arcma():
         list_test_labels.append(test_labels)
     return list_train_features, list_train_labels, list_test_features, list_test_labels
 
-def load_data_to_outlier_test_arcma(activity_outlier, person_list = 1):
+def load_data_to_outlier_test_arcma(activity_outlier, person_list = 16):
 
     #load data
     training, test = load_training_data_with_window_from_sql(arcma, "..\\arcma.db", "Select x, y, z, activity from arcma where activity <> {} and person={}".format(activity_outlier, person_list), "activity", 50)
@@ -130,7 +130,9 @@ def find_the_best_set_depth_3():
 def find_the_best_set_depth_3_activity_loop():
 
     list_train_features, list_train_labels, list_test_features, list_test_labels = load_all_data_to_outlier_test_arcma()
-
+    print("##########################")
+    print("###### TOTAL OF PERSONS: {} ######".format(len(list_train_features)))
+    print("##########################")
     #Verificar resultado do outlier para cada dupla possível de feature
     train_accuracy_flag = 0
     test_accuracy_flag = 0
@@ -138,11 +140,11 @@ def find_the_best_set_depth_3_activity_loop():
     features_flag = []
     n_columns = list_train_features[0].shape[1]
     for c1 in range(n_columns-1):
+        print("##########################")
+        print("###### LOOP = {}/{} ######".format(c1, n_columns-2))
+        print("##########################")
         for c2 in range(c1+1, n_columns):
             for c3 in range(c2 + 1, n_columns):
-                print("++++++++++++++++++++++++++++++")
-                print("FEATURES: {}, {}, {}".format(c1, c2, c3))
-                print("++++++++++++++++++++++++++++++")
                 train_accuracy, test_accuracy, outliers_accuracy = total_accuracy_for_set((c1, c2, c3), list_train_features, list_train_labels, list_test_features, list_test_labels)
                 if(train_accuracy > 70 and test_accuracy > 70 and outliers_accuracy > 70):
                     if(train_accuracy > train_accuracy_flag and test_accuracy > test_accuracy_flag and outliers_accuracy > outliers_accuracy_flag):
@@ -150,6 +152,12 @@ def find_the_best_set_depth_3_activity_loop():
                         test_accuracy_flag = test_accuracy
                         outliers_accuracy_flag = outliers_accuracy
                         features_flag = [c1, c2, c3]
+                        #print
+                        print("----------------------------------------------------------")
+                        print("Find Train Accuracy - columns [{}], [{}], [{}]: {}%".format(features_flag[0], features_flag[1], features_flag[2], train_accuracy_flag))
+                        print("Find Train Accuracy - columns [{}], [{}], [{}]: {}%".format(features_flag[0], features_flag[1], features_flag[2], test_accuracy_flag))
+                        print("Find Train Accuracy - columns [{}], [{}], [{}]: {}%".format(features_flag[0], features_flag[1], features_flag[2], outliers_accuracy_flag))
+
 
     #print
     print("----------------------------------------------------------")
@@ -158,26 +166,12 @@ def find_the_best_set_depth_3_activity_loop():
     print("Best Train Accuracy - columns [{}], [{}], [{}]: {}%".format(features_flag[0], features_flag[1], features_flag[2], outliers_accuracy_flag))
 
 def get_sets_to_outlier_test(list_train_features, list_train_labels, list_test_features, list_test_labels, activity):
+
     train_indexes = np.where(list_train_labels != activity)
-    new_list_train_features = np.take(list_train_features, train_indexes)
     test_indexes = np.where(list_test_labels != activity)
-    new_list_test_features = np.take(list_test_features, test_indexes)
-
     outliers_indexes = np.where(list_train_labels == activity)
-    list_outliers = np.take(list_train_features, outliers_indexes)
 
-    print("Tamanho o Train: {}".format(list_train_features.shape))
-    print("Tamanho o New Train: {}".format(new_list_test_features.shape))
-
-    #print("Len train: {}".format(new_list_train_features.shape))
-    #print("+++++++++++++++++++++++++++")
-    #print("Len outliers: {}".format(list_outliers.shape))
-    #print()
-
-    return new_list_train_features, new_list_test_features, list_outliers
-
-
-
+    return train_indexes, test_indexes, outliers_indexes
 
 def total_accuracy_for_set(features, list_train_features, list_train_labels, list_test_features, list_test_labels, activity_list = range(1, 8)):
 
@@ -188,13 +182,14 @@ def total_accuracy_for_set(features, list_train_features, list_train_labels, lis
 
     for i in activity_list:
         for p in range(0, len(list_train_features)):
-            training_features, test_features, outliers_test_features = get_sets_to_outlier_test(list_train_features[p], list_train_labels[p], list_test_features[p], list_test_labels[p], i)
-            clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.1)
-            clf.fit(training_features[:, features])
+            train_indexes, test_indexes, outliers_indexes = get_sets_to_outlier_test(list_train_features[p], list_train_labels[p], list_test_features[p], list_test_labels[p], i)
 
-            train = training_features[:, features]
-            test = test_features[:, features]
-            outliers = outliers_test_features[:, features]
+            train = list_train_features[p][train_indexes][:, features]
+            test = list_test_features[p][test_indexes][:, features]
+            outliers = list_train_features[p][outliers_indexes][:, features]
+            clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.1)
+            clf.fit(train)
+
 
             # predict
             pred_train = clf.predict(train)
@@ -210,45 +205,11 @@ def total_accuracy_for_set(features, list_train_features, list_train_labels, lis
             train_accuracy = train_accuracy + (100 - (100 * (n_error_train / pred_train.size)))
             test_accuracy = test_accuracy + (100 - (100 * (n_error_test / pred_test.size)))
             outliers_accuracy = outliers_accuracy + (100 - (100 * (n_error_outliers / pred_outliers.size)))
-    print("========= ARCMA ===========")
+    '''print("========= ARCMA ===========")
     print("Train Accuracy Mean = {}%".format(train_accuracy/(len(activity_list)*len(list_train_features))))
     print("Test Accuracy Mean = {}%".format(test_accuracy / (len(activity_list)*len(list_train_features))))
-    print("Outliers Accuracy Mean = {}%".format(outliers_accuracy / (len(activity_list)*len(list_train_features))))
-    return train_accuracy, test_accuracy, outliers_accuracy
-    '''
-    # UMAFALL #
-    train_accuracy = 0
-    test_accuracy = 0
-    outliers_accuracy = 0
-    umafall_activity = ["Bending", "Hopping", "Jogging", "LyingDown", "Sitting", "Walking", "backwardFall", "forwardFall", "lateralFall"]
-    for i in umafall_activity:
-        print(i)
-        training_features, test_features, outliers_test_features = load_data_to_outlier_test_umafall(i)
-        clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.1)
-        clf.fit(training_features[:, features])
-
-        train = training_features[:, features]
-        test = test_features[:, features]
-        outliers = outliers_test_features[:, features]
-
-        # predict
-        pred_train = clf.predict(train)
-        pred_test = clf.predict(test)
-        pred_outliers = clf.predict(outliers)
-
-        # errors
-        n_error_train = pred_train[pred_train == -1].size
-        n_error_test = pred_test[pred_test == -1].size
-        n_error_outliers = pred_outliers[pred_outliers == 1].size
-
-        #update accuracy
-        train_accuracy = train_accuracy + (100 - (100 * (n_error_train / pred_train.size)))
-        test_accuracy = test_accuracy + (100 - (100 * (n_error_test / pred_test.size)))
-        outliers_accuracy = outliers_accuracy + (100 - (100 * (n_error_outliers / pred_outliers.size)))
-    print("========= UMAFALL ===========")
-    print("Train Accuracy Mean = {}%".format(train_accuracy/len(umafall_activity)))
-    print("Test Accuracy Mean = {}%".format(test_accuracy / len(umafall_activity)))
-    print("Outliers Accuracy Mean = {}%".format(outliers_accuracy / len(umafall_activity)))'''
+    print("Outliers Accuracy Mean = {}%".format(outliers_accuracy / (len(activity_list)*len(list_train_features))))'''
+    return train_accuracy/(len(activity_list)*len(list_train_features)), test_accuracy / (len(activity_list)*len(list_train_features)), outliers_accuracy / (len(activity_list)*len(list_train_features))
 
 
 def plot_partial_set(test_features, test_labels):
