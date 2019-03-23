@@ -205,10 +205,10 @@ def total_accuracy_for_set(features, list_train_features, list_train_labels, lis
             train_accuracy = train_accuracy + (100 - (100 * (n_error_train / pred_train.size)))
             test_accuracy = test_accuracy + (100 - (100 * (n_error_test / pred_test.size)))
             outliers_accuracy = outliers_accuracy + (100 - (100 * (n_error_outliers / pred_outliers.size)))
-    '''print("========= ARCMA ===========")
+    print("========= ARCMA ===========")
     print("Train Accuracy Mean = {}%".format(train_accuracy/(len(activity_list)*len(list_train_features))))
     print("Test Accuracy Mean = {}%".format(test_accuracy / (len(activity_list)*len(list_train_features))))
-    print("Outliers Accuracy Mean = {}%".format(outliers_accuracy / (len(activity_list)*len(list_train_features))))'''
+    print("Outliers Accuracy Mean = {}%".format(outliers_accuracy / (len(activity_list)*len(list_train_features))))
     return train_accuracy/(len(activity_list)*len(list_train_features)), test_accuracy / (len(activity_list)*len(list_train_features)), outliers_accuracy / (len(activity_list)*len(list_train_features))
 
 
@@ -221,8 +221,11 @@ def plot_partial_set(test_features, test_labels):
 
 #find_the_best_set_depth_2()
 #find_the_best_set_depth_3()
-find_the_best_set_depth_3_activity_loop()
-#total_accuracy_for_set((10, 14,15))
+#find_the_best_set_depth_3_activity_loop()
 #load_all_data_to_outlier_test_arcma()
+
+#Testar acuária para 1 conjunto de features
+list_train_features, list_train_labels, list_test_features, list_test_labels = load_all_data_to_outlier_test_arcma()
+total_accuracy_for_set((11, 13,15), list_train_features, list_train_labels, list_test_features, list_test_labels)
 
 
