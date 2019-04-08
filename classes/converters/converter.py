@@ -35,7 +35,7 @@ class Converter(object):
             self.csv_files.append(csv_file)
 
 
-    def __init__(self, path_arg):
+    def __init__(self, path_arg="."):
         self.csv_files = []
         self.data = {}
         self.path = path_arg
