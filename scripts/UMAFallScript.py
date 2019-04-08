@@ -273,6 +273,6 @@ def verify_filter_accuracy():
 
 
 #create_umafall_db()
-#classification()
+classification()
 #get_confusion_matrix()
-verify_filter_accuracy()
+#verify_filter_accuracy()
