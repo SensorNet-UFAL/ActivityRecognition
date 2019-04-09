@@ -1,5 +1,7 @@
 from classes.converters.converter import Converter
 import os
+import datetime
+
 class HMPConverter(Converter):
 
     #Load TXT Data
@@ -15,8 +17,11 @@ class HMPConverter(Converter):
                     line = fp.readline()
                     while line:
                         string_line = line.strip()
+                        split_line = string_line.split(" ")
                         data_line = file.split("-")
-                        print("Activity: {}".format(data_line[7]))
+                        datatime_string = data_line[1]+"/"+data_line[2]+"/"+data_line[3]+" "+data_line[4]+":"+data_line[5]+":"+data_line[6]
+                        datatime_obj = datetime.datetime.strptime(datatime_string, '%Y/%m/%d %H:%M:%S')
+                        self.readings.append({"time": datatime_obj, "x": int(split_line[0]), "y": int(split_line[1]), "z": int(split_line[2]), "activity": data_line[7], "person": data_line[8].split(".")[0]})
                         break
                         line = fp.readline()
 
@@ -24,7 +29,7 @@ class HMPConverter(Converter):
                 except Exception as e:
                     fp.close()
                     print(str(e))
-
+        print("Activity: {}".format(str(self.readings)))
 
 
 
