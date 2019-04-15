@@ -1,5 +1,6 @@
 #===== Classification Tools =====#
 from classes.commons.classification_functions import load_training_data_with_window_from_person, calculating_features
+from classes.converters.hmp import HMPConverter
 #===== Machine Learn =====#
 from sklearn.cluster import MeanShift
 #===== Utils =====#
@@ -21,30 +22,39 @@ def load_train_test_outlier_for_each_person(dataset, filename, tablename, featur
         list_test_labels.append(test_labels)
     return list_train_features, list_train_labels, list_test_features, list_test_labels
 
-def clusteringWithMeanShift(dataset, filename, tablename, features, label, window_len, person_indexes, person_column):
-    list_train_features, list_train_labels, list_test_features, list_test_labels = load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label, window_len, person_indexes, person_column)
-    cluster = MeanShift().fit(list_train_features[1])
-    #Print number of activities
-    print("Number of activities: {}".format(len(np.unique(list_train_labels[1]))))
-    #Print number of clusters
+def clusteringWithMeanShift(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column):
+    ##===Load Dataset===##
+    list_train_features, list_train_labels, list_test_features, list_test_labels = load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column)
+    list_train_features = list_train_features[1]
+    list_train_labels = list_train_labels[1]
+    cluster = MeanShift().fit(list_train_features)
+    ##===Print number of activities===##
+    print("Number of activities: {}".format(len(np.unique(list_train_labels))))
+    unique_activities = np.unique(list_train_labels)
+    proportion_aux = 0
+    for activity in unique_activities:
+        activity_indexes = np.where(list_train_labels == activity)[0]
+        proportion = len(activity_indexes)/len(list_train_labels)
+        proportion_aux = proportion_aux + proportion
+        print("Activity {}, proportion: {}".format(activity, proportion))
+    print("Sum of Proportion:{}".format(proportion_aux))
+    ##===Print number of activities===##
+    print("Number of clusters: {}".format(len(np.unique(list_train_labels))))
+    ##===Verify labels for each cluster===##
     labels = cluster.labels_
-    #Ajustando Labels
-    train_labels = list_train_labels[1]
-    #train_labels[train_labels == 'backwardFall'] = 'fall';
-    #train_labels[train_labels == 'forwardFall'] = 'fall';
-    #train_labels[train_labels == 'lateralFall'] = 'fall';
+    train_labels = list_train_labels
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-    for l in range(1,n_clusters+1):
+    for l in range(0,n_clusters):
         indexes = np.where(labels == l)
         print("========= Cluster {} ========".format(l))
-        cluster_aux = labels[indexes]
         train_labels_aux = train_labels[indexes]
-        unique_activities = np.unique(train_labels_aux)
-        activities_proportions = []
-        for ua in unique_activities:
+        unique_activities_cluster = np.unique(train_labels_aux)
+        for ua in unique_activities_cluster:
             ap = np.where(train_labels_aux == ua)
             p = (len(ap[0])/len(train_labels_aux))*100
             print("Activities found: {} - {}%".format(ua, p))
         print("---------------------------------")
 
-
+hmp = HMPConverter("")
+person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
+clusteringWithMeanShift(hmp, "..\\hmp.db", "hmp", "x, y, z, activity", "activity", 100, person_indexes, "person")

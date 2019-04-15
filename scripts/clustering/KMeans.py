@@ -77,13 +77,14 @@ def clusteringWithMeanShift():
     print("Number of activities: {}".format(len(np.unique(list_train_labels[1]))))
     #Print number of clusters
     labels = cluster.labels_
+    print("Labels: {}".format(np.unique(labels)))
     #Ajustando Labels
     train_labels = list_train_labels[1]
     #train_labels[train_labels == 'backwardFall'] = 'fall';
     #train_labels[train_labels == 'forwardFall'] = 'fall';
     #train_labels[train_labels == 'lateralFall'] = 'fall';
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-    for l in range(1,n_clusters+1):
+    for l in range(0,n_clusters):
         indexes = np.where(labels == l)
         print("========= Cluster {} ========".format(l))
         cluster_aux = labels[indexes]
