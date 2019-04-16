@@ -5,6 +5,7 @@ from classes.converters.hmp import HMPConverter
 from sklearn.cluster import MeanShift
 #===== Utils =====#
 import numpy as np
+from classes.commons.utils import print_verbose
 
 def load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label, window_len, person_indexes, person_column):
     list_train_features = []
@@ -22,39 +23,70 @@ def load_train_test_outlier_for_each_person(dataset, filename, tablename, featur
         list_test_labels.append(test_labels)
     return list_train_features, list_train_labels, list_test_features, list_test_labels
 
-def clusteringWithMeanShift(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column):
+##=== Function to Clustering the Dataset ===##
+def clusteringWithMeanShift(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose = False):
     ##===Load Dataset===##
     list_train_features, list_train_labels, list_test_features, list_test_labels = load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column)
-    list_train_features = list_train_features[1]
-    list_train_labels = list_train_labels[1]
+    list_train_features = list_train_features[3]
+    list_train_labels = list_train_labels[3]
     cluster = MeanShift().fit(list_train_features)
     ##===Print number of activities===##
-    print("Number of activities: {}".format(len(np.unique(list_train_labels))))
+    print_verbose("Number of activities: {}".format(len(np.unique(list_train_labels))), verbose)
     unique_activities = np.unique(list_train_labels)
     proportion_aux = 0
     for activity in unique_activities:
         activity_indexes = np.where(list_train_labels == activity)[0]
         proportion = len(activity_indexes)/len(list_train_labels)
         proportion_aux = proportion_aux + proportion
-        print("Activity {}, proportion: {}".format(activity, proportion))
-    print("Sum of Proportion:{}".format(proportion_aux))
+        print_verbose("Activity {}, proportion: {}".format(activity, proportion), verbose)
+    print_verbose("Sum of Proportion:{}".format(proportion_aux), verbose)
     ##===Print number of activities===##
-    print("Number of clusters: {}".format(len(np.unique(list_train_labels))))
+    print_verbose("Number of clusters: {}".format(len(np.unique(list_train_labels))), verbose)
     ##===Verify labels for each cluster===##
     labels = cluster.labels_
     train_labels = list_train_labels
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+    return_cluster = []
     for l in range(0,n_clusters):
         indexes = np.where(labels == l)
-        print("========= Cluster {} ========".format(l))
+        print_verbose("========= Cluster {} ========".format(l), verbose)
         train_labels_aux = train_labels[indexes]
         unique_activities_cluster = np.unique(train_labels_aux)
+        aux_cluster = []
         for ua in unique_activities_cluster:
             ap = np.where(train_labels_aux == ua)
             p = (len(ap[0])/len(train_labels_aux))*100
-            print("Activities found: {} - {}%".format(ua, p))
-        print("---------------------------------")
 
+            aux_cluster.append({"activity":ua, "proportion":p})
+
+            print_verbose("Activities found: {} - {}%".format(ua, p), verbose)
+        if len(aux_cluster) > 0:
+            return_cluster.append(aux_cluster)
+        print_verbose("---------------------------------", verbose)
+    return return_cluster
+
+##=== Searching Similar Activities To Remove ===##
+def searching_similar_activities(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose=False):
+    clusters = clusteringWithMeanShift(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose)
+    ##== Searching Bigger Cluster ==##
+    bigger_cluster = []
+    for c in clusters:
+        if len(c) > len(bigger_cluster):
+            bigger_cluster = c
+    ##== A) - Searching if any activity there are in all clusters, if yes, delete ==##
+    activities_to_delete = []
+    if len(bigger_cluster) > 0:
+        for activity in bigger_cluster: # Verify all activities of the bigger cluster
+            for c in clusters:
+                occurences = c.count(activity)
+                if occurences < 1: # Activitie doesn't exist in cluster
+                    activity_in_all_cluters = False
+            if activity_in_all_cluters:
+                activities_to_delete.append(activity)
+
+    print("Activities to delete: {}".format(activities_to_delete))
+
+##=== Calling The Functions ===##
 hmp = HMPConverter("")
 person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
-clusteringWithMeanShift(hmp, "..\\hmp.db", "hmp", "x, y, z, activity", "activity", 100, person_indexes, "person")
+searching_similar_activities(hmp, "..\\hmp.db", "hmp", "x, y, z, activity", "activity", 100, person_indexes, "person", verbose=True)

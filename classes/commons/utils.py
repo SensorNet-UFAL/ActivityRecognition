@@ -486,3 +486,6 @@ def knn_verify_accuracy_cross_validation(data, features_keys, label_key,n_fold, 
 def print_debug(msg):
     if DEBUG:
         print(msg)
+def print_verbose(msg, verbose):
+    if verbose:
+        print(msg)
