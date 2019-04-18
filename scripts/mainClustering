@@ -84,7 +84,15 @@ def searching_similar_activities(dataset, filename, tablename, features, label_c
             if activity_in_all_cluters:
                 activities_to_delete.append(activity)
 
-    print("Activities to delete: {}".format(activities_to_delete))
+    ##== B) - Some activity there are in more that one cluster?
+        activities_set = []
+        for c in clusters:
+            for activity in c:
+                if activities_set.count(activity) < 1:
+                    activities_set.append(activity)
+        print("Activity SET({}) : {}".format(len(activities_set),activities_set))
+
+    print("Activities to delete : {}".format(activities_to_delete))
 
 ##=== Calling The Functions ===##
 hmp = HMPConverter("")
