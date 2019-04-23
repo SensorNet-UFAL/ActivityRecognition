@@ -87,13 +87,16 @@ def searching_similar_activities(dataset, filename, tablename, features, label_c
     ##== B) - Some activity there are in more that one cluster?
         activities_dic = {}
         for c in clusters:
+            min_proportion = min(c, key=lambda x: x["proportion"])
             for activity in c:
                 if list(activities_dic.keys()).count(activity['activity']) > 0:
                     activities_dic[activity['activity']]["count"] = activities_dic[activity['activity']]["count"] + 1
-                    activities_dic[activity['activity']]["other_activities"].append((len(c)-1))
+                    activities_dic[activity['activity']]["other_activities"].append({"len":(len(c)-1), "min_proportion":(activity==min_proportion)})
                 else:
-                    activities_dic[activity['activity']] = {"count": 1, "other_activities": [(len(c)-1)]}
+
+                    activities_dic[activity['activity']] = {"count": 1, "other_activities": [{"len":(len(c)-1), "min_proportion":(activity==min_proportion)}]}
         print("Activity SET({}) : {}".format(len(activities_dic.keys()),activities_dic))
+
 
     print("Activities to delete : {}".format(activities_to_delete))
 
