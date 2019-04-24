@@ -87,16 +87,24 @@ def searching_similar_activities(dataset, filename, tablename, features, label_c
     ##== B) - Some activity there are in more that one cluster?
         activities_dic = {}
         for c in clusters:
-            min_proportion = min(c, key=lambda x: x["proportion"])
+            max_proportion = max(c, key=lambda x: x["proportion"])
             for activity in c:
                 if list(activities_dic.keys()).count(activity['activity']) > 0:
                     activities_dic[activity['activity']]["count"] = activities_dic[activity['activity']]["count"] + 1
-                    activities_dic[activity['activity']]["other_activities"].append({"len":(len(c)-1), "min_proportion":(activity==min_proportion)})
+                    activities_dic[activity['activity']]["other_activities"].append({"len":(len(c)-1), "max_proportion":(activity==max_proportion)})
                 else:
 
-                    activities_dic[activity['activity']] = {"count": 1, "other_activities": [{"len":(len(c)-1), "min_proportion":(activity==min_proportion)}]}
+                    activities_dic[activity['activity']] = {"count": 1, "other_activities": [{"len":(len(c)-1), "max_proportion":(activity==max_proportion)}]}
         print("Activity SET({}) : {}".format(len(activities_dic.keys()),activities_dic))
 
+        for activity in activities_dic.keys():
+            activity_dic = activities_dic[activity]
+            if activity_dic["count"] > 1: # Activity with more that one cluster
+                min_len = min(activity_dic["other_activities"], key=lambda x: x["len"]) #
+                if min_len["len"] > 0: # In all clusters, this activity appear together with other activities
+                    max_proportion = list(map(lambda x: x["max_proportion"], activity_dic["other_activities"])) # The activity has no major proportion in any cluster
+                    if not any(max_proportion):
+                        activities_to_delete.append(activity)
 
     print("Activities to delete : {}".format(activities_to_delete))
 
