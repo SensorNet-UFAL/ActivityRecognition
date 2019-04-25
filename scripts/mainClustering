@@ -1,20 +1,22 @@
 #===== Classification Tools =====#
 from classes.commons.classification_functions import load_training_data_with_window_from_person, calculating_features
 from classes.converters.hmp import HMPConverter
+from classes.converters.arcma import ARCMAConverter
 #===== Machine Learn =====#
-from sklearn.cluster import MeanShift
+from sklearn.cluster import MeanShift, KMeans
 #===== Utils =====#
+import os
 import numpy as np
 from classes.commons.utils import print_verbose
 
-def load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label, window_len, person_indexes, person_column):
+def load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label, window_len, person_indexes, person_column, additional_where = ""):
     list_train_features = []
     list_train_labels = []
     list_test_features = []
     list_test_labels = []
     for person_index in person_indexes:
         training, test = load_training_data_with_window_from_person(dataset, filename, tablename, features,
-                                                                    label, window_len, person_index, person_column)
+                                                                    label, window_len, person_index, person_column, additional_where)
         training_features, training_labels = calculating_features(training, x_label="x", y_label="y", z_label="z")
         test_features, test_labels = calculating_features(test, x_label="x", y_label="y", z_label="z")
         list_train_features.append(training_features)
@@ -24,12 +26,13 @@ def load_train_test_outlier_for_each_person(dataset, filename, tablename, featur
     return list_train_features, list_train_labels, list_test_features, list_test_labels
 
 ##=== Function to Clustering the Dataset ===##
-def clusteringWithMeanShift(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose = False):
+def clusteringWithMeanShift(dataset, cluster_num, filename, tablename, features, label_column, window_len, person_indexes, person_column, additional_where = "",verbose = False):
     ##===Load Dataset===##
-    list_train_features, list_train_labels, list_test_features, list_test_labels = load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column)
-    list_train_features = list_train_features[3]
-    list_train_labels = list_train_labels[3]
-    cluster = MeanShift().fit(list_train_features)
+    list_train_features, list_train_labels, list_test_features, list_test_labels = load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, additional_where)
+    list_train_features = list_train_features[6]
+    list_train_labels = list_train_labels[6]
+    #cluster = MeanShift().fit(list_train_features)
+    cluster = KMeans(n_clusters=cluster_num, random_state=170).fit(list_train_features)
     ##===Print number of activities===##
     print_verbose("Number of activities: {}".format(len(np.unique(list_train_labels))), verbose)
     unique_activities = np.unique(list_train_labels)
@@ -66,8 +69,7 @@ def clusteringWithMeanShift(dataset, filename, tablename, features, label_column
     return return_cluster
 
 ##=== Searching Similar Activities To Remove ===##
-def searching_similar_activities(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose=False):
-    clusters = clusteringWithMeanShift(dataset, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose)
+def searching_similar_activities(clusters, verbose=False):
     ##== Searching Bigger Cluster ==##
     bigger_cluster = []
     for c in clusters:
@@ -95,7 +97,7 @@ def searching_similar_activities(dataset, filename, tablename, features, label_c
                 else:
 
                     activities_dic[activity['activity']] = {"count": 1, "other_activities": [{"len":(len(c)-1), "max_proportion":(activity==max_proportion)}]}
-        print("Activity SET({}) : {}".format(len(activities_dic.keys()),activities_dic))
+        print_verbose("Activity SET({}) : {}".format(len(activities_dic.keys()),activities_dic), verbose)
 
         for activity in activities_dic.keys():
             activity_dic = activities_dic[activity]
@@ -106,9 +108,38 @@ def searching_similar_activities(dataset, filename, tablename, features, label_c
                     if not any(max_proportion):
                         activities_to_delete.append(activity)
 
-    print("Activities to delete : {}".format(activities_to_delete))
+    print_verbose("Activities to delete : {}".format(activities_to_delete), verbose)
+    return activities_to_delete
+
+def clusteringWithoutSimilarActivities(dataset, cluster_num, filename, tablename, features, label_column, window_len, person_indexes, person_column, verbose = False):
+    clusters = clusteringWithMeanShift(dataset, cluster_num, filename, tablename, features, label_column, window_len, person_indexes,person_column, additional_where = "", verbose=True)
+    activities_to_delete = searching_similar_activities(clusters, verbose)
+    loop = 0
+    if len(activities_to_delete) > 0:
+        activities_to_delete_last_len = 0
+        while(activities_to_delete_last_len < len(activities_to_delete)):
+            activities_to_delete_last_len = len(activities_to_delete)
+            additional_where_activity = ""
+            for a in activities_to_delete:
+                additional_where_activity = additional_where_activity + " and activity <> '{}'".format(a)
+            print_verbose(additional_where_activity, verbose)
+            clusters = clusteringWithMeanShift(dataset, cluster_num, filename, tablename, features, label_column, window_len, person_indexes, person_column, additional_where=additional_where_activity, verbose=True)
+            activities_to_delete = activities_to_delete + searching_similar_activities(clusters, verbose)
+
+            print_verbose("Loop: {}".format(loop), verbose)
+            print_verbose("AC TO DE: {} | AC TO DE LAST: {}".format(len(activities_to_delete), activities_to_delete_last_len), verbose)
+            loop = loop + 1
+
+    print_verbose("Total activities to Delete = {}".format(activities_to_delete), verbose)
 
 ##=== Calling The Functions ===##
-hmp = HMPConverter("")
-person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
-searching_similar_activities(hmp, "..\\hmp.db", "hmp", "x, y, z, activity", "activity", 100, person_indexes, "person", verbose=True)
+
+##= HMP = ###
+#hmp = HMPConverter("")
+#person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
+#clusteringWithoutSimilarActivities(hmp, 14,"..\\hmp.db", "hmp", "x, y, z, activity", "activity", 100, person_indexes, "person", verbose=True)
+
+##= ARCMA = ##
+arcma = ARCMAConverter("..\\..\\\\databases\\arcma")
+clusteringWithoutSimilarActivities(arcma, 8, "..\\arcma.db", "arcma", "x, y, z, activity", "activity", 100, list(range(1,16)), "person", verbose=True)
+

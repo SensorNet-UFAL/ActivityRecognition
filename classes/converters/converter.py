@@ -91,9 +91,13 @@ class Converter(object):
         dataset = sqlite3.connect(filename)
         return get_data_sql_query(sql, dataset)
 
-    def get_all_readings_from_person(self, filename, tablename, features, person_tag, person_column):
+    def get_all_readings_from_person(self, filename, tablename, features, person_tag, person_column, additional_where = ""):
         dataset = sqlite3.connect(filename)
-        return get_data_sql_query("select {} from {} where {} = {}".format(features, tablename, person_column, person_tag), dataset)
+        if len(additional_where) > 0:
+            to_return = get_data_sql_query("select {} from {} where {} = {} {}".format(features, tablename, person_column, person_tag, additional_where), dataset)
+        else:
+            to_return = get_data_sql_query("select {} from {} where {} = {}".format(features, tablename, person_column, person_tag), dataset)
+        return to_return
 
     #Do: function that return one list with activities
     def load_list_of_activities(self, filename, tablename, features, activities_indexes, separated=True, activity_column_name = "activity"):

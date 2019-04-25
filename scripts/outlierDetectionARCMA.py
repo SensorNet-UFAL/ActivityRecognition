@@ -15,7 +15,7 @@ def load_all_data_to_outlier_test_arcma():
     list_test_features = []
     list_test_labels = []
     for p in range(1, 16):
-        training, test = load_training_data_with_window_from_sql(arcma, "..\\arcma.db", "Select x, y, z, activity, person from arcma where person={}".format(p), "activity", 50)
+        training, test = load_training_data_with_window_from_sql(arcma, "..\\arcma.db", "Select x, y, z, activity, person from arcma where person={} and activity <> 2 and activity <> 3 and activity <> 6 and activity <> 5".format(p), "activity", 50)
         training_features, training_labels = calculating_features(training)
         test_features, test_labels = calculating_features(test)
         list_train_features.append(training_features)
@@ -226,6 +226,7 @@ def plot_partial_set(test_features, test_labels):
 
 #Testar acuária para 1 conjunto de features
 list_train_features, list_train_labels, list_test_features, list_test_labels = load_all_data_to_outlier_test_arcma()
+#total_accuracy_for_set((11, 13,15), list_train_features, list_train_labels, list_test_features, list_test_labels)
 total_accuracy_for_set((11, 13,15), list_train_features, list_train_labels, list_test_features, list_test_labels)
 
 
