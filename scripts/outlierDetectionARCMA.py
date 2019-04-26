@@ -173,7 +173,7 @@ def get_sets_to_outlier_test(list_train_features, list_train_labels, list_test_f
 
     return train_indexes, test_indexes, outliers_indexes
 
-def total_accuracy_for_set(features, list_train_features, list_train_labels, list_test_features, list_test_labels, activity_list = range(1, 8)):
+def total_accuracy_for_set(features, list_train_features, list_train_labels, list_test_features, list_test_labels, activity_list = [1,4,7]):
 
     # ARCMA #
     train_accuracy = 0
@@ -190,7 +190,7 @@ def total_accuracy_for_set(features, list_train_features, list_train_labels, lis
             clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.1)
             clf.fit(train)
 
-
+            print("LOOP SVM: {}".format(p))
             # predict
             pred_train = clf.predict(train)
             pred_test = clf.predict(test)
