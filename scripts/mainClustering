@@ -1,5 +1,5 @@
 #===== Classification Tools =====#
-from classes.commons.classification_functions import load_training_data_with_window_from_person, calculating_features
+from classes.commons.classification_functions import load_train_test_outlier_for_each_person
 from classes.converters.hmp import HMPConverter
 from classes.converters.arcma import ARCMAConverter
 from classes.converters.umaAdl import UmaAdlConverter
@@ -10,23 +10,6 @@ import os
 import numpy as np
 from classes.commons.utils import print_verbose
 
-
-#== Loading all data by person, returns a list where each item is a set with all one person reads ==#
-def load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label_axis, label, window_len, person_indexes, person_column, additional_where = ""):
-    list_train_features = []
-    list_train_labels = []
-    list_test_features = []
-    list_test_labels = []
-    for person_index in person_indexes:
-        training, test = load_training_data_with_window_from_person(dataset, filename, tablename, features,
-                                                                    label, window_len, person_index, person_column, additional_where)
-        training_features, training_labels = calculating_features(training, x_label=label_axis[0], y_label=label_axis[1], z_label=label_axis[2])
-        test_features, test_labels = calculating_features(test, x_label=label_axis[0], y_label=label_axis[1], z_label=label_axis[2])
-        list_train_features.append(training_features)
-        list_train_labels.append(training_labels)
-        list_test_features.append(test_features)
-        list_test_labels.append(test_labels)
-    return list_train_features, list_train_labels, list_test_features, list_test_labels
 
 ##=== Function to Clustering the Dataset ===##
 def clusteringWithMeanShift(dataset, cluster_num, filename, tablename, features, label_axis, label_column, window_len, person_indexes, person_column, additional_where = "",verbose = False):
@@ -138,13 +121,13 @@ def clusteringWithoutSimilarActivities(dataset, cluster_num, filename, tablename
 ##=== Calling The Functions ===##
 
 ##= HMP = ###
-hmp = HMPConverter("")
-person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
-clusteringWithoutSimilarActivities(hmp, 14,"..\\hmp.db", "hmp", "x, y, z, activity", ["x","y","z"], "activity", 100, person_indexes, "person", verbose=True)
+#hmp = HMPConverter("")
+#person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
+#clusteringWithoutSimilarActivities(hmp, 14,"..\\hmp.db", "hmp", "x, y, z, activity", ["x","y","z"], "activity", 100, person_indexes, "person", verbose=True)
 
 ##= ARCMA = ##
-#arcma = ARCMAConverter("..\\..\\\\databases\\arcma")
-#clusteringWithoutSimilarActivities(arcma, 8, "..\\arcma.db", "arcma", "x, y, z, activity", ["x","y","z"], "activity", 100, list(range(1,16)), "person", verbose=True)
+arcma = ARCMAConverter("..\\..\\\\databases\\arcma")
+clusteringWithoutSimilarActivities(arcma, 8, "..\\arcma.db", "arcma", "x, y, z, activity", ["x","y","z"], "activity", 100, list(range(1,16)), "person", verbose=True)
 
 ##= UMAFALL = ##
 #umafall = UmaAdlConverter('')

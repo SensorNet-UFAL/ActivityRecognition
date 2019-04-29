@@ -294,3 +294,20 @@ def load_training_data_with_window_from_sql(dataset, filename, sql, label, windo
     list_window = slice_by_window(list_raw_data, label, window_len)
     training, test = slice_to_training_test(list_window)
     return training, test
+
+#== Loading all data by person, returns a list where each item is a set with all one person reads ==#
+def load_train_test_outlier_for_each_person(dataset, filename, tablename, features, label_axis, label_column, window_len, person_indexes, person_column, additional_where = ""):
+    list_train_features = []
+    list_train_labels = []
+    list_test_features = []
+    list_test_labels = []
+    for person_index in person_indexes:
+        training, test = load_training_data_with_window_from_person(dataset, filename, tablename, features,
+                                                                    label_column, window_len, person_index, person_column, additional_where)
+        training_features, training_labels = calculating_features(training, x_label=label_axis[0], y_label=label_axis[1], z_label=label_axis[2])
+        test_features, test_labels = calculating_features(test, x_label=label_axis[0], y_label=label_axis[1], z_label=label_axis[2])
+        list_train_features.append(training_features)
+        list_train_labels.append(training_labels)
+        list_test_features.append(test_features)
+        list_test_labels.append(test_labels)
+    return list_train_features, list_train_labels, list_test_features, list_test_labels
