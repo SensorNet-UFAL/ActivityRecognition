@@ -121,13 +121,13 @@ def clusteringWithoutSimilarActivities(dataset, cluster_num, filename, tablename
 ##=== Calling The Functions ===##
 
 ##= HMP = ###
-hmp = HMPConverter("")
-person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
-clusteringWithoutSimilarActivities(hmp, 14,"..\\hmp.db", "hmp", "x, y, z, activity", ["x","y","z"], "activity", 100, person_indexes, "person", verbose=True)
+#hmp = HMPConverter("")
+#person_indexes = ["'f1'", "'m1'", "'m2'", "'f2'", "'m3'", "'f3'", "'m4'", "'m5'", "'m6'", "'m7'", "'f4'", "'m8'", "'m9'", "'f5'", "'m10'", "'m11'", "'f1_1'", "'f1_2'", "'f1_3'", "'f1_4'", "'f1_5'", "'m1_1'", "'m1_2'", "'m2_1'", "'m2_2'", "'f3_1'", "'f3_2'"]
+#clusteringWithoutSimilarActivities(hmp, 14,"..\\hmp.db", "hmp", "x, y, z, activity", ["x","y","z"], "activity", 100, person_indexes, "person", verbose=True)
 
 ##= ARCMA = ##
-#arcma = ARCMAConverter("..\\..\\\\databases\\arcma")
-#clusteringWithoutSimilarActivities(arcma, 8, "..\\arcma.db", "arcma", "x, y, z, activity", ["x","y","z"], "activity", 100, list(range(1,16)), "person", verbose=True)
+arcma = ARCMAConverter("..\\..\\\\databases\\arcma")
+clusteringWithoutSimilarActivities(arcma, 8, "..\\arcma.db", "arcma", "x, y, z, activity", ["x","y","z"], "activity", 100, list(range(1,16)), "person", verbose=True)
 
 ##= UMAFALL = ##
 #umafall = UmaAdlConverter('')
